@@ -22,3 +22,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+* To migrate the DB, go to "db/migrate" and run below code with specific version (version = timestamp):
+  bin/rails db:migrate VERSION=<version>
