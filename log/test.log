@@ -1065,3 +1065,690 @@ Processing by ApplicationController#home as HTML
   Rendered application/home.erb within layouts/application (0.4ms)
 Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.0ms)
   [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+  [1m[35m (575.1ms)[0m  [1m[35mDROP DATABASE IF EXISTS "yelp_test"[0m
+  [1m[35m (745.2ms)[0m  [1m[35mCREATE DATABASE "yelp_test" ENCODING = 'unicode'[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[35mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (5.5ms)[0m  [1m[35mCREATE TABLE "restaurants" ("id" serial primary key, "name" character varying, "description" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "restaurants_reviews" ("restaurant_id" integer NOT NULL, "review_id" integer NOT NULL)[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCREATE TABLE "reviews" ("id" serial primary key, "score" integer, "comment" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (3.4ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" (version) VALUES ('20161003143922')[0m
+  [1m[35m (0.5ms)[0m  [1m[32mINSERT INTO schema_migrations (version) VALUES ('20161003133929'), ('20161003140054');
+
+[0m
+  [1m[35m (2.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "test"], ["created_at", 2016-10-03 15:29:21 UTC], ["updated_at", 2016-10-03 15:29:21 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant" for 127.0.0.1 at 2016-10-03 16:29:21 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  Rendered restaurant/index.erb within layouts/application (1.3ms)
+Completed 200 OK in 2221ms (Views: 2209.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/new" for 127.0.0.1 at 2016-10-03 16:29:23 +0100
+Processing by RestaurantController#new as HTML
+  Rendering restaurant/new.erb within layouts/application
+  Rendered restaurant/new.erb within layouts/application (0.5ms)
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/new" for 127.0.0.1 at 2016-10-03 16:29:23 +0100
+Processing by RestaurantController#new as HTML
+  Rendering restaurant/new.erb within layouts/application
+  Rendered restaurant/new.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+Started POST "/restaurant" for 127.0.0.1 at 2016-10-03 16:29:23 +0100
+Processing by RestaurantController#create as HTML
+  Parameters: {"restaurant"=>"Chicken shop"}
+Redirected to http://www.example.com/restaurant
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/restaurant" for 127.0.0.1 at 2016-10-03 16:29:23 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  Rendered restaurant/index.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1" for 127.0.0.1 at 2016-10-03 16:29:23 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/edit" for 127.0.0.1 at 2016-10-03 16:29:23 +0100
+Processing by RestaurantController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/edit.erb within layouts/application
+  Rendered restaurant/edit.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/edit" for 127.0.0.1 at 2016-10-03 16:29:23 +0100
+Processing by RestaurantController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/edit.erb within layouts/application
+  Rendered restaurant/edit.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+Started GET "/restaurant/1?restaurant=Fish+shop" for 127.0.0.1 at 2016-10-03 16:29:23 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"restaurant"=>"Fish shop", "id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/review/new" for 127.0.0.1 at 2016-10-03 16:29:23 +0100
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2016-10-03 16:29:23 +0100
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (0.5ms)
+Completed 200 OK in 7ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant" for 127.0.0.1 at 2016-10-03 16:35:31 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  Rendered restaurant/index.erb within layouts/application (1.3ms)
+Completed 200 OK in 242ms (Views: 227.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/new" for 127.0.0.1 at 2016-10-03 16:35:32 +0100
+Processing by RestaurantController#new as HTML
+  Rendering restaurant/new.erb within layouts/application
+  Rendered restaurant/new.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/new" for 127.0.0.1 at 2016-10-03 16:35:32 +0100
+Processing by RestaurantController#new as HTML
+  Rendering restaurant/new.erb within layouts/application
+  Rendered restaurant/new.erb within layouts/application (0.5ms)
+Completed 200 OK in 11ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+Started POST "/restaurant" for 127.0.0.1 at 2016-10-03 16:35:32 +0100
+Processing by RestaurantController#create as HTML
+  Parameters: {"restaurant"=>"Chicken shop"}
+Redirected to http://www.example.com/restaurant
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/restaurant" for 127.0.0.1 at 2016-10-03 16:35:32 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  Rendered restaurant/index.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1" for 127.0.0.1 at 2016-10-03 16:35:32 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/edit" for 127.0.0.1 at 2016-10-03 16:35:32 +0100
+Processing by RestaurantController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/edit.erb within layouts/application
+  Rendered restaurant/edit.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/edit" for 127.0.0.1 at 2016-10-03 16:35:32 +0100
+Processing by RestaurantController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/edit.erb within layouts/application
+  Rendered restaurant/edit.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+Started GET "/restaurant/1?restaurant=Fish+shop" for 127.0.0.1 at 2016-10-03 16:35:32 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"restaurant"=>"Fish shop", "id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/review/new" for 127.0.0.1 at 2016-10-03 16:35:32 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+Completed 406 Not Acceptable in 117ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2016-10-03 16:35:32 +0100
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 3.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant" for 127.0.0.1 at 2016-10-03 16:36:44 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  Rendered restaurant/index.erb within layouts/application (2.2ms)
+Completed 200 OK in 236ms (Views: 224.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/new" for 127.0.0.1 at 2016-10-03 16:36:44 +0100
+Processing by RestaurantController#new as HTML
+  Rendering restaurant/new.erb within layouts/application
+  Rendered restaurant/new.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/new" for 127.0.0.1 at 2016-10-03 16:36:44 +0100
+Processing by RestaurantController#new as HTML
+  Rendering restaurant/new.erb within layouts/application
+  Rendered restaurant/new.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+Started POST "/restaurant" for 127.0.0.1 at 2016-10-03 16:36:44 +0100
+Processing by RestaurantController#create as HTML
+  Parameters: {"restaurant"=>"Chicken shop"}
+Redirected to http://www.example.com/restaurant
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/restaurant" for 127.0.0.1 at 2016-10-03 16:36:44 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  Rendered restaurant/index.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1" for 127.0.0.1 at 2016-10-03 16:36:44 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.5ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/edit" for 127.0.0.1 at 2016-10-03 16:36:44 +0100
+Processing by RestaurantController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/edit.erb within layouts/application
+  Rendered restaurant/edit.erb within layouts/application (0.5ms)
+Completed 200 OK in 11ms (Views: 7.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/edit" for 127.0.0.1 at 2016-10-03 16:36:44 +0100
+Processing by RestaurantController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/edit.erb within layouts/application
+  Rendered restaurant/edit.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+Started GET "/restaurant/1?restaurant=Fish+shop" for 127.0.0.1 at 2016-10-03 16:36:44 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"restaurant"=>"Fish shop", "id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/review/new" for 127.0.0.1 at 2016-10-03 16:36:44 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2016-10-03 16:36:44 +0100
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 5.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant" for 127.0.0.1 at 2016-10-03 16:37:13 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  Rendered restaurant/index.erb within layouts/application (2.4ms)
+Completed 200 OK in 243ms (Views: 231.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/new" for 127.0.0.1 at 2016-10-03 16:37:13 +0100
+Processing by RestaurantController#new as HTML
+  Rendering restaurant/new.erb within layouts/application
+  Rendered restaurant/new.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/new" for 127.0.0.1 at 2016-10-03 16:37:13 +0100
+Processing by RestaurantController#new as HTML
+  Rendering restaurant/new.erb within layouts/application
+  Rendered restaurant/new.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+Started POST "/restaurant" for 127.0.0.1 at 2016-10-03 16:37:13 +0100
+Processing by RestaurantController#create as HTML
+  Parameters: {"restaurant"=>"Chicken shop"}
+Redirected to http://www.example.com/restaurant
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+Started GET "/restaurant" for 127.0.0.1 at 2016-10-03 16:37:13 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  Rendered restaurant/index.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1" for 127.0.0.1 at 2016-10-03 16:37:13 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/edit" for 127.0.0.1 at 2016-10-03 16:37:13 +0100
+Processing by RestaurantController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/edit.erb within layouts/application
+  Rendered restaurant/edit.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 5.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/edit" for 127.0.0.1 at 2016-10-03 16:37:13 +0100
+Processing by RestaurantController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/edit.erb within layouts/application
+  Rendered restaurant/edit.erb within layouts/application (0.7ms)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+Started GET "/restaurant/1?restaurant=Fish+shop" for 127.0.0.1 at 2016-10-03 16:37:13 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"restaurant"=>"Fish shop", "id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/review/new" for 127.0.0.1 at 2016-10-03 16:37:13 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2016-10-03 16:37:13 +0100
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant" for 127.0.0.1 at 2016-10-03 16:37:43 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  Rendered restaurant/index.erb within layouts/application (1.9ms)
+Completed 200 OK in 241ms (Views: 230.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/new" for 127.0.0.1 at 2016-10-03 16:37:43 +0100
+Processing by RestaurantController#new as HTML
+  Rendering restaurant/new.erb within layouts/application
+  Rendered restaurant/new.erb within layouts/application (0.5ms)
+Completed 200 OK in 10ms (Views: 7.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/new" for 127.0.0.1 at 2016-10-03 16:37:43 +0100
+Processing by RestaurantController#new as HTML
+  Rendering restaurant/new.erb within layouts/application
+  Rendered restaurant/new.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+Started POST "/restaurant" for 127.0.0.1 at 2016-10-03 16:37:44 +0100
+Processing by RestaurantController#create as HTML
+  Parameters: {"restaurant"=>"Chicken shop"}
+Redirected to http://www.example.com/restaurant
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/restaurant" for 127.0.0.1 at 2016-10-03 16:37:44 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  Rendered restaurant/index.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 10.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1" for 127.0.0.1 at 2016-10-03 16:37:44 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/edit" for 127.0.0.1 at 2016-10-03 16:37:44 +0100
+Processing by RestaurantController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/edit.erb within layouts/application
+  Rendered restaurant/edit.erb within layouts/application (0.6ms)
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/edit" for 127.0.0.1 at 2016-10-03 16:37:44 +0100
+Processing by RestaurantController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/edit.erb within layouts/application
+  Rendered restaurant/edit.erb within layouts/application (0.5ms)
+Completed 200 OK in 10ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+Started GET "/restaurant/1?restaurant=Fish+shop" for 127.0.0.1 at 2016-10-03 16:37:44 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"restaurant"=>"Fish shop", "id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/review/new" for 127.0.0.1 at 2016-10-03 16:37:44 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (0.5ms)
+Completed 200 OK in 10ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2016-10-03 16:37:44 +0100
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (0.7ms)
+Completed 200 OK in 9ms (Views: 6.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant" for 127.0.0.1 at 2016-10-03 16:42:43 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  Rendered restaurant/index.erb within layouts/application (1.4ms)
+Completed 200 OK in 238ms (Views: 226.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/new" for 127.0.0.1 at 2016-10-03 16:42:43 +0100
+Processing by RestaurantController#new as HTML
+  Rendering restaurant/new.erb within layouts/application
+  Rendered restaurant/new.erb within layouts/application (0.5ms)
+Completed 200 OK in 12ms (Views: 8.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/new" for 127.0.0.1 at 2016-10-03 16:42:43 +0100
+Processing by RestaurantController#new as HTML
+  Rendering restaurant/new.erb within layouts/application
+  Rendered restaurant/new.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+Started POST "/restaurant" for 127.0.0.1 at 2016-10-03 16:42:43 +0100
+Processing by RestaurantController#create as HTML
+  Parameters: {"restaurant"=>"Chicken shop"}
+Redirected to http://www.example.com/restaurant
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+Started GET "/restaurant" for 127.0.0.1 at 2016-10-03 16:42:43 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  Rendered restaurant/index.erb within layouts/application (0.4ms)
+Completed 200 OK in 11ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1" for 127.0.0.1 at 2016-10-03 16:42:43 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/edit" for 127.0.0.1 at 2016-10-03 16:42:43 +0100
+Processing by RestaurantController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/edit.erb within layouts/application
+  Rendered restaurant/edit.erb within layouts/application (0.6ms)
+Completed 200 OK in 10ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/edit" for 127.0.0.1 at 2016-10-03 16:42:43 +0100
+Processing by RestaurantController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/edit.erb within layouts/application
+  Rendered restaurant/edit.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+Started GET "/restaurant/1?restaurant=Fish+shop" for 127.0.0.1 at 2016-10-03 16:42:43 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"restaurant"=>"Fish shop", "id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/review/new" for 127.0.0.1 at 2016-10-03 16:42:43 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (0.5ms)
+Completed 200 OK in 13ms (Views: 9.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/review/new" for 127.0.0.1 at 2016-10-03 16:42:43 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/review" for 127.0.0.1 at 2016-10-03 16:42:43 +0100
+Processing by ReviewController#index as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/index.erb within layouts/application
+  Rendered review/index.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2016-10-03 16:42:43 +0100
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (0.5ms)
+Completed 200 OK in 11ms (Views: 8.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.5ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant" for 127.0.0.1 at 2016-10-03 16:44:29 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  Rendered restaurant/index.erb within layouts/application (1.2ms)
+Completed 200 OK in 242ms (Views: 225.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/new" for 127.0.0.1 at 2016-10-03 16:44:29 +0100
+Processing by RestaurantController#new as HTML
+  Rendering restaurant/new.erb within layouts/application
+  Rendered restaurant/new.erb within layouts/application (0.7ms)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/new" for 127.0.0.1 at 2016-10-03 16:44:29 +0100
+Processing by RestaurantController#new as HTML
+  Rendering restaurant/new.erb within layouts/application
+  Rendered restaurant/new.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+Started POST "/restaurant" for 127.0.0.1 at 2016-10-03 16:44:29 +0100
+Processing by RestaurantController#create as HTML
+  Parameters: {"restaurant"=>"Chicken shop"}
+Redirected to http://www.example.com/restaurant
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+Started GET "/restaurant" for 127.0.0.1 at 2016-10-03 16:44:29 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  Rendered restaurant/index.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1" for 127.0.0.1 at 2016-10-03 16:44:29 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/edit" for 127.0.0.1 at 2016-10-03 16:44:29 +0100
+Processing by RestaurantController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/edit.erb within layouts/application
+  Rendered restaurant/edit.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/edit" for 127.0.0.1 at 2016-10-03 16:44:29 +0100
+Processing by RestaurantController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/edit.erb within layouts/application
+  Rendered restaurant/edit.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 5.6ms | ActiveRecord: 0.0ms)
+Started GET "/restaurant/1?restaurant=Fish+shop" for 127.0.0.1 at 2016-10-03 16:44:29 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"restaurant"=>"Fish shop", "id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/review/new" for 127.0.0.1 at 2016-10-03 16:44:29 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 5.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/review/new" for 127.0.0.1 at 2016-10-03 16:44:29 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+Started POST "/restaurant/1/review" for 127.0.0.1 at 2016-10-03 16:44:29 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"score"=>"5", "comment"=>"very bad", "restaurant_id"=>"1"}
+No template found for ReviewController#create, rendering head :no_content
+Completed 204 No Content in 125ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/review" for 127.0.0.1 at 2016-10-03 16:44:29 +0100
+Processing by ReviewController#index as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/index.erb within layouts/application
+  Rendered review/index.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2016-10-03 16:44:30 +0100
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (0.3ms)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant" for 127.0.0.1 at 2016-10-03 16:45:11 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  Rendered restaurant/index.erb within layouts/application (1.2ms)
+Completed 200 OK in 235ms (Views: 218.8ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/new" for 127.0.0.1 at 2016-10-03 16:45:11 +0100
+Processing by RestaurantController#new as HTML
+  Rendering restaurant/new.erb within layouts/application
+  Rendered restaurant/new.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/new" for 127.0.0.1 at 2016-10-03 16:45:11 +0100
+Processing by RestaurantController#new as HTML
+  Rendering restaurant/new.erb within layouts/application
+  Rendered restaurant/new.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+Started POST "/restaurant" for 127.0.0.1 at 2016-10-03 16:45:11 +0100
+Processing by RestaurantController#create as HTML
+  Parameters: {"restaurant"=>"Chicken shop"}
+Redirected to http://www.example.com/restaurant
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+Started GET "/restaurant" for 127.0.0.1 at 2016-10-03 16:45:11 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  Rendered restaurant/index.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 7.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1" for 127.0.0.1 at 2016-10-03 16:45:11 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/edit" for 127.0.0.1 at 2016-10-03 16:45:11 +0100
+Processing by RestaurantController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/edit.erb within layouts/application
+  Rendered restaurant/edit.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 5.4ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/edit" for 127.0.0.1 at 2016-10-03 16:45:11 +0100
+Processing by RestaurantController#edit as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/edit.erb within layouts/application
+  Rendered restaurant/edit.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.0ms)
+Started GET "/restaurant/1?restaurant=Fish+shop" for 127.0.0.1 at 2016-10-03 16:45:11 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"restaurant"=>"Fish shop", "id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.4ms)
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/review/new" for 127.0.0.1 at 2016-10-03 16:45:11 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (0.4ms)
+Completed 200 OK in 10ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/review/new" for 127.0.0.1 at 2016-10-03 16:45:11 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (0.5ms)
+Completed 200 OK in 11ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+Started POST "/restaurant/1/review" for 127.0.0.1 at 2016-10-03 16:45:11 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"score"=>"5", "comment"=>"very bad", "restaurant_id"=>"1"}
+No template found for ReviewController#create, rendering head :no_content
+Completed 204 No Content in 97ms (ActiveRecord: 0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/restaurant/1/review" for 127.0.0.1 at 2016-10-03 16:45:11 +0100
+Processing by ReviewController#index as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/index.erb within layouts/application
+  Rendered review/index.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+Started GET "/" for 127.0.0.1 at 2016-10-03 16:45:11 +0100
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
