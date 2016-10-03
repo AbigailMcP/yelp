@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-root 'application#home'
+  resources :restaurant
+  root 'application#home'
 end
