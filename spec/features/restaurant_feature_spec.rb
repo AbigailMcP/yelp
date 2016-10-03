@@ -23,7 +23,7 @@ feature 'creating restaurants' do
 
   scenario 'restaurants are saved to the database' do
     visit '/restaurant/new'
-    fill_in('restaurant', with: 'Chicken shop')
+    fill_in('name', with: 'Chicken shop')
     click_on('add')
     expect(page).to have_current_path('/restaurant')
     expect(page).to have_content('Chicken shop')
