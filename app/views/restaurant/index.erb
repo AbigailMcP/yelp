@@ -1,2 +1,8 @@
-<p>There are no restaurants</p>
-<p>Chicken shop</p>
+<% @restaurants.each do |restaurant| %>
+  <%= restaurant.name %> -
+  <%= restaurant.description %>
+  <% end %>
+
+<% if @restaurants.empty? %>
+  <%= "<p>There are no restaurants</p>" %>
+<% end %>
