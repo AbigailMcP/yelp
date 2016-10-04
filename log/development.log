@@ -60,3 +60,1849 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 [0m
+Started GET "/" for ::1 at 2016-10-04 11:22:47 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (1.6ms)
+Completed 200 OK in 485ms (Views: 412.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 11:22:53 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.3ms)
+Completed 200 OK in 45ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/review/new" for ::1 at 2016-10-04 11:22:55 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/restaurant/review/new"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered collection of /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [35 times] (33.0ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (36.3ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (195.8ms)
+Started GET "/restaurant/review/new" for ::1 at 2016-10-04 11:23:57 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/restaurant/review/new"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendered collection of /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [35 times] (20.1ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.2ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (158.4ms)
+Started GET "/restaurant/1" for ::1 at 2016-10-04 11:26:32 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.6ms)
+Completed 200 OK in 143ms (Views: 136.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 11:26:34 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-10-04 11:30:49 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (2.9ms)
+Completed 200 OK in 568ms (Views: 537.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 11:30:54 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.5ms)
+Completed 200 OK in 83ms (Views: 50.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 11:30:55 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (0.4ms)
+Completed 200 OK in 46ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 11:38:07 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (2.1ms)
+Completed 200 OK in 484ms (Views: 465.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 11:38:10 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (0.5ms)
+Completed 200 OK in 95ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 11:38:16 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"score"=>"5", "comment"=>"V Good", "restaurant_id"=>"1"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+actionpack (5.0.0.1) lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+actionpack (5.0.0.1) lib/action_controller/metal/request_forgery_protection.rb:223:in `handle_unverified_request'
+devise (4.2.0) lib/devise/controllers/helpers.rb:253:in `handle_unverified_request'
+actionpack (5.0.0.1) lib/action_controller/metal/request_forgery_protection.rb:218:in `verify_authenticity_token'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:382:in `block in make_lambda'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:169:in `call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:169:in `block (2 levels) in halting'
+actionpack (5.0.0.1) lib/abstract_controller/callbacks.rb:12:in `call'
+actionpack (5.0.0.1) lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:170:in `call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:170:in `block in halting'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:454:in `call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:454:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:454:in `each'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:454:in `call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.0.1) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.0.1) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.0.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+actionpack (5.0.0.1) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.0.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.0.1) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.0.1) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.0.1) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.0.1) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.0.1) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.6) lib/warden/manager.rb:35:in `block in call'
+warden (1.2.6) lib/warden/manager.rb:34:in `catch'
+warden (1.2.6) lib/warden/manager.rb:34:in `call'
+rack (2.0.1) lib/rack/etag.rb:25:in `call'
+rack (2.0.1) lib/rack/conditional_get.rb:38:in `call'
+rack (2.0.1) lib/rack/head.rb:12:in `call'
+rack (2.0.1) lib/rack/session/abstract/id.rb:222:in `context'
+rack (2.0.1) lib/rack/session/abstract/id.rb:216:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.0.1) lib/active_record/migration.rb:552:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.7ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (114.3ms)
+Started GET "/" for ::1 at 2016-10-04 11:41:53 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (2.0ms)
+Completed 200 OK in 394ms (Views: 375.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 11:41:56 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (130.4ms)
+Completed 200 OK in 192ms (Views: 175.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review/new" for ::1 at 2016-10-04 11:42:03 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/restaurant/1/review/new"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendered collection of /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [35 times] (15.3ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (13.0ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (174.1ms)
+Started POST "/restaurant/1/review/new" for ::1 at 2016-10-04 11:45:41 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (No route matches [POST] "/restaurant/1/review/new"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered collection of /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [35 times] (12.6ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (82.8ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (15.3ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (250.7ms)
+Started POST "/restaurant/1/review/new" for ::1 at 2016-10-04 11:48:24 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (No route matches [POST] "/restaurant/1/review/new"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered collection of /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [35 times] (11.6ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.5ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.4ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (157.8ms)
+Started POST "/restaurant/1/review/new" for ::1 at 2016-10-04 11:49:51 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (1.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (No route matches [POST] "/restaurant/1/review/new"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered collection of /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [35 times] (11.3ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (8.0ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (12.3ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (170.0ms)
+Started POST "/restaurant/1/review/new" for ::1 at 2016-10-04 11:51:21 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (No route matches [POST] "/restaurant/1/review/new"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered collection of /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [35 times] (19.3ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (11.2ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (16.8ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (193.6ms)
+Started POST "/restaurant/1/review/new" for ::1 at 2016-10-04 11:51:56 +0100
+  
+ActionController::RoutingError (No route matches [POST] "/restaurant/1/review/new"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered collection of /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [35 times] (12.2ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (3.0ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (145.4ms)
+Started GET "/restaurant/1" for ::1 at 2016-10-04 11:52:05 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.5ms)
+Completed 200 OK in 737ms (Views: 716.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 11:52:07 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (36.1ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 404 Not Found in 122ms (ActiveRecord: 43.0ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Restaurant with 'id'=1):
+  
+app/controllers/review_controller.rb:4:in `new'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.7ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (106.8ms)
+Started GET "/restaurant" for ::1 at 2016-10-04 11:52:18 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.9ms)
+Completed 200 OK in 141ms (Views: 131.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/new" for ::1 at 2016-10-04 11:52:23 +0100
+Processing by RestaurantController#new as HTML
+  Rendering restaurant/new.erb within layouts/application
+  Rendered restaurant/new.erb within layouts/application (1.8ms)
+Completed 200 OK in 103ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant" for ::1 at 2016-10-04 11:52:29 +0100
+Processing by RestaurantController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/XIaooeG6FIwuNfK/ioHskcAzVTkOcgB+Nis8/oziPIXDBCz4zSvYLcqbGdU+wZdybyEOhu6/OvV0tUVZdWFqg==", "name"=>"Chicken Shop", "description"=>"Test", "commit"=>"add"}
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (119.5ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "Chicken Shop"], ["description", "Test"], ["created_at", 2016-10-04 10:52:29 UTC], ["updated_at", 2016-10-04 10:52:29 UTC]]
+  [1m[35m (46.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/restaurant
+Completed 302 Found in 188ms (ActiveRecord: 166.5ms)
+
+
+Started GET "/restaurant" for ::1 at 2016-10-04 11:52:29 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.1ms)
+Completed 200 OK in 47ms (Views: 42.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 11:52:36 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.3ms)
+Completed 200 OK in 110ms (Views: 54.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 11:52:38 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.3ms)
+
+
+  
+NoMethodError (undefined method `chapters' for nil:NilClass):
+  
+app/controllers/review_controller.rb:5:in `new'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.3ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (94.3ms)
+Started GET "/restaurant/1" for ::1 at 2016-10-04 11:52:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.3ms)
+Completed 200 OK in 45ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 11:52:54 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (15.7ms)
+Completed 200 OK in 149ms (Views: 65.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 11:52:59 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"94qyifYU2bPuIJJ25PTw8W0E1a45kggooHgGX64BWoAd9LiYkqaegWmyKdtOJfEe47icwMYRPMKNcn+5MedX2A==", "comment"=>{"score"=>"5", "comment"=>"Best"}, "commit"=>"Save Comment", "restaurant_id"=>"1"}
+No template found for ReviewController#create, rendering head :no_content
+Completed 204 No Content in 228ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 11:53:56 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (1.6ms)
+Completed 200 OK in 53ms (Views: 48.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 11:53:59 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7emumchflgb9EQTNYDlPUwWZPcMdMQnjbXtfSD4ussMHl6SIrO3RNHqDv2DK6E68iyV0reKyPQlAcSauoci/mw==", "comment"=>{"score"=>"3", "comment"=>"4"}, "commit"=>"Save Comment", "restaurant_id"=>"1"}
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `restaurant_id' for #<ReviewController:0x007ff3a3c44ef8>):
+  
+app/controllers/review_controller.rb:7:in `create'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.7ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (160.4ms)
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 11:54:12 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (1.5ms)
+Completed 200 OK in 47ms (Views: 41.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 11:54:15 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3rfX+VwffUuqZO8t/5RPH5bRDML2CRJ/3wo+aM4o99Y0yd3oOK06eS32VIBVRU7wGG1FrAmKJpXyAEeOUc76jg==", "comment"=>{"score"=>"2", "comment"=>"3"}, "commit"=>"Save Comment", "restaurant_id"=>"1"}
+Redirected to http://localhost:3000/restaurant/1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 11:54:15 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.4ms)
+Completed 200 OK in 145ms (Views: 63.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 11:55:39 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (1.4ms)
+Completed 200 OK in 44ms (Views: 40.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 11:55:43 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0qs9GnVrEhqICFZC4rvUnVc5H0oPR0NtgeqweJ45b+E41TcLEdlVKA+a7e9IatVy2YVWJPDEd4es4MmeAd9iuQ==", "comment"=>{"score"=>"1", "comment"=>"awful"}, "commit"=>"Save Comment", "restaurant_id"=>"1"}
+Redirected to http://localhost:3000/restaurant/1
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 11:55:43 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.5ms)
+Completed 200 OK in 46ms (Views: 42.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 12:01:06 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (3.4ms)
+Completed 200 OK in 601ms (Views: 551.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 12:01:09 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (241.5ms)
+Completed 200 OK in 285ms (Views: 281.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:01:16 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AbJenQv/pq7i9gvbFuSsH3KI+N7UMWbyaBnEYNjxfS/rzFSMb03hnGVksHa8Na3w/DSxsCuyUhhFE72GRxdwdw==", "review"=>{"score"=>"5", "comment"=>"v.good"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 132ms (ActiveRecord: 8.9ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/review_controller.rb:8:in `create'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.0ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.6ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (203.9ms)
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 12:02:48 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (1.7ms)
+Completed 200 OK in 43ms (Views: 39.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:02:50 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8wQBy1/bCoZvbdcQR3vkyTRxJkNXjwL/5hta15hBhcMZegvaO2lNtOj/bL3tquUmus1vLagMNhXLESMxB6eImw==", "review"=>{"score"=>"3", "comment"=>"4"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: utf8, authenticity_token, review, commit, restaurant_id
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 8.6ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'restaurant_id' for Review.):
+  
+app/controllers/review_controller.rb:8:in `create'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (12.2ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (109.5ms)
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 12:04:24 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (1.6ms)
+Completed 200 OK in 45ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:04:26 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/6ZmZcxdvzx9wThG39ueABbjpMKsUB6mBtcO71+1TpsV2Gx0qO/4DvpTg+t1Cp/vmF/trFPTKkwr3XcJwFNDww==", "review"=>{"score"=>"3", "comment"=>"3"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: utf8, authenticity_token, review, commit, restaurant_id
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 5.2ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'restaurant_id' for Review.):
+  
+app/controllers/review_controller.rb:9:in `create'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (14.4ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.9ms)
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 12:04:46 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (2.2ms)
+Completed 200 OK in 47ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:04:47 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F+HK95YpHNcVTd83GkiHRhf2uQtA15hYPyDSG7V4wtv9n8Dm8ptb5ZLfZJqwmYapmUrwZb9UrLISKqv9Kp7Pgw==", "review"=>{"score"=>"2", "comment"=>"2"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 6.4ms)
+
+
+  
+NoMethodError (undefined method `review' for #<Restaurant:0x007f84e5ae9978>):
+  
+app/controllers/review_controller.rb:9:in `create'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.8ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.3ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (96.6ms)
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:05:45 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F+HK95YpHNcVTd83GkiHRhf2uQtA15hYPyDSG7V4wtv9n8Dm8ptb5ZLfZJqwmYapmUrwZb9UrLISKqv9Kp7Pgw==", "review"=>{"score"=>"2", "comment"=>"2"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: utf8, authenticity_token, review, commit, restaurant_id
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 7.7ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'restaurant_id' for Review.):
+  
+app/controllers/review_controller.rb:8:in `create'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.3ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (96.5ms)
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:06:14 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F+HK95YpHNcVTd83GkiHRhf2uQtA15hYPyDSG7V4wtv9n8Dm8ptb5ZLfZJqwmYapmUrwZb9UrLISKqv9Kp7Pgw==", "review"=>{"score"=>"2", "comment"=>"2"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: utf8, authenticity_token, review, commit
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'restaurant_id' for Review.):
+  
+app/controllers/review_controller.rb:8:in `create'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.3ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (89.4ms)
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:06:28 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F+HK95YpHNcVTd83GkiHRhf2uQtA15hYPyDSG7V4wtv9n8Dm8ptb5ZLfZJqwmYapmUrwZb9UrLISKqv9Kp7Pgw==", "review"=>{"score"=>"2", "comment"=>"2"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: utf8, authenticity_token, review, commit
+Unpermitted parameters: utf8, authenticity_token, review, commit
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'restaurant_id' for Review.):
+  
+app/controllers/review_controller.rb:9:in `create'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (15.3ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (105.5ms)
+Started GET "/restaurant/1/review" for ::1 at 2016-10-04 12:08:42 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ReviewController#index as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/index.erb within layouts/application
+  Rendered review/index.erb within layouts/application (4.0ms)
+Completed 200 OK in 696ms (Views: 666.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:08:46 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F+HK95YpHNcVTd83GkiHRhf2uQtA15hYPyDSG7V4wtv9n8Dm8ptb5ZLfZJqwmYapmUrwZb9UrLISKqv9Kp7Pgw==", "review"=>{"score"=>"2", "comment"=>"2"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 88ms (ActiveRecord: 4.8ms)
+
+
+  
+NameError (uninitialized constant ReviewController::Reviews):
+  
+app/controllers/review_controller.rb:8:in `create'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.1ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (111.0ms)
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:08:55 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F+HK95YpHNcVTd83GkiHRhf2uQtA15hYPyDSG7V4wtv9n8Dm8ptb5ZLfZJqwmYapmUrwZb9UrLISKqv9Kp7Pgw==", "review"=>{"score"=>"2", "comment"=>"2"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: utf8, authenticity_token, review, commit, restaurant_id
+Completed 500 Internal Server Error in 50ms (ActiveRecord: 2.8ms)
+
+
+  
+NoMethodError (undefined method `build' for #<Class:0x007ffe859f3e00>):
+  
+app/controllers/review_controller.rb:8:in `create'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.7ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.8ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (89.0ms)
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:09:04 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F+HK95YpHNcVTd83GkiHRhf2uQtA15hYPyDSG7V4wtv9n8Dm8ptb5ZLfZJqwmYapmUrwZb9UrLISKqv9Kp7Pgw==", "review"=>{"score"=>"2", "comment"=>"2"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: utf8, authenticity_token, review, commit, restaurant_id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 157ms (ActiveRecord: 6.7ms)
+
+
+  
+NoMethodError (undefined method `rating' for #<Review:0x007ffe8c372cc8>):
+  
+app/controllers/review_controller.rb:8:in `create'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (25.0ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (116.3ms)
+Started GET "/" for ::1 at 2016-10-04 12:10:15 +0100
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (0.5ms)
+Completed 200 OK in 172ms (Views: 151.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/new" for ::1 at 2016-10-04 12:10:18 +0100
+Processing by RestaurantController#new as HTML
+  Rendering restaurant/new.erb within layouts/application
+  Rendered restaurant/new.erb within layouts/application (1.7ms)
+Completed 200 OK in 69ms (Views: 43.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant" for ::1 at 2016-10-04 12:10:23 +0100
+Processing by RestaurantController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WoKobQcr8ofVkaVHpLpyEfdE2KM/9axOTVaFy4cHBd2w/KJ8Y5m1tVIDHuoOa3P+efiRzcB2mKRgXPwtGOEIhQ==", "name"=>"test", "description"=>"test", "commit"=>"add"}
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (71.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "test"], ["description", "test"], ["created_at", 2016-10-04 11:10:23 UTC], ["updated_at", 2016-10-04 11:10:23 UTC]]
+  [1m[35m (1070.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/restaurant
+Completed 302 Found in 1148ms (ActiveRecord: 1141.9ms)
+
+
+Started GET "/restaurant" for ::1 at 2016-10-04 12:10:24 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (3.1ms)
+Completed 200 OK in 67ms (Views: 35.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurant/index" for ::1 at 2016-10-04 12:10:32 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"index"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.4ms)
+Completed 200 OK in 83ms (Views: 34.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 12:11:11 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.3ms)
+Completed 200 OK in 50ms (Views: 45.1ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:14:08 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"F+HK95YpHNcVTd83GkiHRhf2uQtA15hYPyDSG7V4wtv9n8Dm8ptb5ZLfZJqwmYapmUrwZb9UrLISKqv9Kp7Pgw==", "review"=>{"score"=>"2", "comment"=>"2"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: utf8, authenticity_token, review, commit, restaurant_id
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://localhost:3000/restaurant/1
+Completed 302 Found in 41ms (ActiveRecord: 6.2ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 12:14:09 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.4ms)
+Completed 200 OK in 57ms (Views: 52.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 12:14:13 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (387.6ms)
+Completed 200 OK in 423ms (Views: 419.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:14:16 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Ad1cN9KBB9DXBFtY8X8N2yNO6+VaSDx5KNJD1xq9Nyrro1YmtjNA4lCW4PVbrgw0rfKii6XLCJMF2DoxhVs6cg==", "review"=>{"score"=>"0", "comment"=>"test"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: utf8, authenticity_token, review, commit, restaurant_id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://localhost:3000/restaurant/1
+Completed 302 Found in 8ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 12:14:16 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.4ms)
+Completed 200 OK in 42ms (Views: 38.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 12:16:09 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (4.3ms)
+Completed 200 OK in 1216ms (Views: 1195.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 12:16:13 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (199.4ms)
+Completed 200 OK in 267ms (Views: 262.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:16:17 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"V/eC0gad+Wd2yF2/JO2ZnLiZtNkB0/JZaqHa/6oPdju9iYjDYi++VfFa5hKOPJhzNiX9t/5QxrNHq6MZNel7Yw==", "review"=>{"score"=>"4", "comment"=>"test"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+Unpermitted parameters: utf8, authenticity_token, review, commit, restaurant_id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://localhost:3000/restaurant/1
+Completed 302 Found in 75ms (ActiveRecord: 8.0ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 12:16:17 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.4ms)
+Completed 200 OK in 52ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 12:16:52 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (1.7ms)
+Completed 200 OK in 58ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:16:55 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"USOB34i2Vw5wbYP8otQ7kxr334Ru4nyz1OaPKiRj50O7XYvO7AQQPPf/OFEIBTp8lEuW6pFhSFn57PbMu4XqGw==", "review"=>{"score"=>"2", "comment"=>"test"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+Unpermitted parameters: utf8, authenticity_token, review, commit, restaurant_id
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://localhost:3000/restaurant/1
+Completed 302 Found in 21ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 12:16:55 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.4ms)
+Completed 200 OK in 46ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 12:18:27 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (1.5ms)
+Completed 200 OK in 44ms (Views: 40.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:18:29 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7sHmtcrrfDUPjXCeQ6OG9xAa1MpQj10ap7afW2SpFasEv+ykrlk7B4gfyzPpcocYnqadpK8MafCKvOa9+08Y8w==", "review"=>{"score"=>"2", "comment"=>"2"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+Unpermitted parameters: utf8, authenticity_token, review, commit, restaurant_id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://localhost:3000/restaurant/1
+Completed 302 Found in 16ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 12:18:29 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.4ms)
+Completed 200 OK in 43ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 12:18:43 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.4ms)
+Completed 200 OK in 47ms (Views: 43.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 12:18:45 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (1.6ms)
+Completed 200 OK in 45ms (Views: 41.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:18:48 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TImwHXV0F/cwIyfjOjWEjz6MgYAti+sc8xVsrr/zUlqm97oMEcZQxbexnE6Q5IVgsDDI7tII3/beHxVIIBVfAg==", "review"=>{"score"=>"2", "comment"=>"2"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+Unpermitted parameters: utf8, authenticity_token, review, commit, restaurant_id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://localhost:3000/restaurant/1
+Completed 302 Found in 14ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 12:18:48 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.5ms)
+Completed 200 OK in 41ms (Views: 37.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 12:19:13 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (34.7ms)
+Completed 200 OK in 290ms (Views: 270.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:19:16 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+ZXUdHlUZx12Snxs/63ueWXd1xmu+tFpEleTkQW8emAT695lHeYgL/HYx8FVfO+W62Ged1F55YM/Xep3mlp3OA==", "review"=>{"score"=>"2", "comment"=>"2"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+Unpermitted parameters: utf8, authenticity_token, review, commit, restaurant_id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://localhost:3000/restaurant/1
+Completed 302 Found in 33ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 12:19:16 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.4ms)
+Completed 200 OK in 68ms (Views: 62.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 12:19:51 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (1.6ms)
+Completed 200 OK in 42ms (Views: 38.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:19:53 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QOM22o8bpikhfH4Fh5TGoIsQiS2xgX8dwoJwdIpqCiCqnTzL66nhG6buxagtRcdPBazAQ04CS/fviAmSFYwHeA==", "review"=>{"score"=>"2", "comment"=>"2"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+Unpermitted parameters: utf8, authenticity_token, review, commit, restaurant_id
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://localhost:3000/restaurant/1
+Completed 302 Found in 20ms (ActiveRecord: 3.6ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 12:19:53 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.4ms)
+Completed 200 OK in 46ms (Views: 42.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 12:20:45 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.6ms)
+Completed 200 OK in 54ms (Views: 48.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 12:20:47 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (2.5ms)
+Completed 200 OK in 63ms (Views: 58.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:20:48 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zt1lKeaEuHr6DGwkwJXLba5bVJKnjTdrx4MoiyOWirIko284gjb/SH2e14lqRMqCIOcd/FgOA4HqiVFtvHCH6g==", "review"=>{"score"=>"2", "comment"=>"2"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 6.2ms)
+
+
+  
+ActiveModel::ForbiddenAttributesError (ActiveModel::ForbiddenAttributesError):
+  
+app/controllers/review_controller.rb:7:in `create'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (13.9ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.8ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (107.7ms)
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 12:21:12 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (1.6ms)
+Completed 200 OK in 43ms (Views: 39.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:21:14 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RjKE/HfvC5KhFZItxRTeT66VQR9B55WP/rib4H4ZRT2sTI7tE11MoCaHKYBvxd+gICkIcb5koWXTsuIG4f9IZQ==", "review"=>{"score"=>"2", "comment"=>"2"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+Unpermitted parameters: utf8, authenticity_token, review, commit, restaurant_id
+Unpermitted parameters: utf8, authenticity_token, review, commit, restaurant_id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://localhost:3000/restaurant/1
+Completed 302 Found in 19ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 12:21:14 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.5ms)
+Completed 200 OK in 39ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 12:21:51 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (1.4ms)
+Completed 200 OK in 46ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:21:52 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tOnQjSOMbm4onzfLZ5Rpg8bJJG9RLA9K703pAzvMNNBel9qcRz4pXK8NjGbNRWhsSHVtAa6vO6DCR5DlpCo5iA==", "review"=>{"score"=>"2", "comment"=>"2"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+Unpermitted parameters: utf8, authenticity_token, review, commit, restaurant_id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://localhost:3000/restaurant/1
+Completed 302 Found in 17ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 12:21:53 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.4ms)
+Completed 200 OK in 38ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/new" for ::1 at 2016-10-04 12:23:15 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/new"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendered collection of /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [35 times] (13.4ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (574.1ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (723.6ms)
+Started GET "/user/new" for ::1 at 2016-10-04 12:23:20 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/user/new"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered collection of /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [35 times] (16.3ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (122.8ms)
+Started GET "/users" for ::1 at 2016-10-04 12:23:22 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered collection of /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [35 times] (9.9ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (116.0ms)
+Started GET "/users/signup" for ::1 at 2016-10-04 12:23:26 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/users/signup"):
+  
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `call'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendered collection of /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb [35 times] (9.9ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (122.9ms)
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 12:26:23 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (1.6ms)
+Completed 200 OK in 180ms (Views: 176.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:26:25 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZQbWHf4vXfXclSOmAS0dJQyFknaMNAkPSipbuh6dX9KPeNwMmp0ax1sHmAur/BzKgjnbGHO3PeVnICJcgXtSig==", "review"=>{"score"=>"1", "comment"=>"1"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: utf8, authenticity_token, review, commit, restaurant_id
+Completed 500 Internal Server Error in 428ms (ActiveRecord: 4.8ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'restaurant_id' for Review.):
+  
+app/controllers/review_controller.rb:8:in `create'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.2ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (88.7ms)
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:27:39 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZQbWHf4vXfXclSOmAS0dJQyFknaMNAkPSipbuh6dX9KPeNwMmp0ax1sHmAur/BzKgjnbGHO3PeVnICJcgXtSig==", "review"=>{"score"=>"1", "comment"=>"1"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (2.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: utf8, authenticity_token, review, commit, restaurant_id
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 2.3ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'restaurant_id' for Review.):
+  
+app/controllers/review_controller.rb:8:in `create'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.8ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (290.3ms)
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:27:47 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZQbWHf4vXfXclSOmAS0dJQyFknaMNAkPSipbuh6dX9KPeNwMmp0ax1sHmAur/BzKgjnbGHO3PeVnICJcgXtSig==", "review"=>{"score"=>"1", "comment"=>"1"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (1.5ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: utf8, authenticity_token, review, commit, restaurant_id
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.5ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'restaurant_id' for Review.):
+  
+app/controllers/review_controller.rb:8:in `create'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.0ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (77.5ms)
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 12:27:58 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (84.7ms)
+Completed 200 OK in 354ms (Views: 350.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:28:00 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zpf6xINkOZm0uSbPE/L42hidLTBuctGF9gA7zyNdm9yM6fDV59Z+qzMrnWK5I/k1liFkXpHx5W/bCkIpvLuWhA==", "review"=>{"score"=>"1", "comment"=>"1"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.6ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: utf8, authenticity_token, review, commit, restaurant_id
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.9ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'restaurant_id' for Review.):
+  
+app/controllers/review_controller.rb:8:in `create'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.2ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.7ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (101.5ms)
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 12:28:27 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (1.8ms)
+Completed 200 OK in 53ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:28:34 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"JDw6AXmHY2R+WOJZBZxLbiDbvMvW5h0LxiZmqelJ5hPOQjAQHTUkVvnKWfSvTUqBrmf1pSllKeHrLB9Pdq/rSw==", "review"=>{"score"=>"1", "comment"=>"1"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: utf8, authenticity_token, review, commit, restaurant_id
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.5ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'restaurant_id' for Review.):
+  
+app/controllers/review_controller.rb:8:in `create'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (16.9ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (98.5ms)
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 12:32:07 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (2.4ms)
+Completed 200 OK in 206ms (Views: 189.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:32:10 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dkWr1uAE0RGGPUXq5QN+yhHWM0WXuFB5Vp4nwerVe42cO6HHhLaWIwGv/kdP0n8ln2p6K2g7ZJN7lF4ndTN21Q==", "review"=>{"score"=>"1", "comment"=>"1"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: utf8, authenticity_token, review, commit, restaurant_id
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 6.3ms)
+
+
+  
+NoMethodError (undefined method `build_review' for #<Restaurant:0x007fdbfcb42140>):
+  
+app/controllers/review_controller.rb:8:in `create'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.8ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.8ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (113.2ms)
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:33:48 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dkWr1uAE0RGGPUXq5QN+yhHWM0WXuFB5Vp4nwerVe42cO6HHhLaWIwGv/kdP0n8ln2p6K2g7ZJN7lF4ndTN21Q==", "review"=>{"score"=>"1", "comment"=>"1"}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Unpermitted parameters: utf8, authenticity_token, review, commit, restaurant_id
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://localhost:3000/restaurant/1
+Completed 302 Found in 51ms (ActiveRecord: 9.6ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 12:33:48 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.6ms)
+Completed 200 OK in 158ms (Views: 145.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 12:36:00 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.4ms)
+Completed 200 OK in 221ms (Views: 201.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 12:36:02 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (1.5ms)
+Completed 200 OK in 119ms (Views: 38.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:36:03 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"916wrFEyv5BhMkAL3R8rpICv8lzSPj/j6UjL21qNRSsdILq9NYD4ouag+6Z3zipLDhO7Mi29CwnEQrI9xWtIcw==", "review"=>{"score"=>"", "comment"=>""}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 114ms (ActiveRecord: 0.3ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'restaurant_id' for Review.):
+  
+app/controllers/review_controller.rb:8:in `create'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.5ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (95.7ms)
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:36:14 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"916wrFEyv5BhMkAL3R8rpICv8lzSPj/j6UjL21qNRSsdILq9NYD4ouag+6Z3zipLDhO7Mi29CwnEQrI9xWtIcw==", "review"=>{"score"=>"", "comment"=>""}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+Redirected to http://localhost:3000/restaurant/1
+Completed 302 Found in 24ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 12:36:14 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.5ms)
+Completed 200 OK in 40ms (Views: 36.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 12:36:38 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.4ms)
+Completed 200 OK in 44ms (Views: 40.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1/review/new" for ::1 at 2016-10-04 12:36:39 +0100
+Processing by ReviewController#new as HTML
+  Parameters: {"restaurant_id"=>"1"}
+  Rendering review/new.erb within layouts/application
+  Rendered review/new.erb within layouts/application (1.6ms)
+Completed 200 OK in 43ms (Views: 39.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:36:40 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3PaOKP+3SGJK8mBE+CPfykEvr8FNXXzFu3Z4OVcpbu02iIQ5mwUPUM1g2+lS8t4lz5Pmr7LeSC+WfAHfyM9jtQ==", "review"=>{"score"=>"", "comment"=>""}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 135ms (ActiveRecord: 0.4ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'restaurant_id' for Review.):
+  
+app/controllers/review_controller.rb:8:in `create'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (9.8ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (95.0ms)
+Started POST "/restaurant/1/review" for ::1 at 2016-10-04 12:37:58 +0100
+Processing by ReviewController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3PaOKP+3SGJK8mBE+CPfykEvr8FNXXzFu3Z4OVcpbu02iIQ5mwUPUM1g2+lS8t4lz5Pmr7LeSC+WfAHfyM9jtQ==", "review"=>{"score"=>"", "comment"=>""}, "commit"=>"Save Review", "restaurant_id"=>"1"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.6ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'restaurant_id' for Review.):
+  
+app/controllers/review_controller.rb:8:in `create'
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (11.1ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendering /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /Users/Tom/.rvm/gems/ruby-2.2.4/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (101.3ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3530894603011922685);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddRestaurantIdToReview (20161004114630)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (41.7ms)[0m  [1m[35mALTER TABLE "reviews" ADD "restaurant_id" integer[0m
+  [1m[35m (38.1ms)[0m  [1m[35mCREATE  INDEX  "index_reviews_on_restaurant_id" ON "reviews"  ("restaurant_id")[0m
+  [1m[35m (389.4ms)[0m  [1m[35mALTER TABLE "reviews" ADD CONSTRAINT "fk_rails_8173017a90"
+FOREIGN KEY ("restaurant_id")
+  REFERENCES "restaurants" ("id")
+[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161004114630"]]
+  [1m[35m (43.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(3530894603011922685)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (26.3ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'restaurants'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'restaurants_reviews'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'reviews'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3530894603011922685);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DropRestaurantReviewsTable (20161004114742)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (44.6ms)[0m  [1m[35mDROP TABLE "restaurants_reviews"[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161004114742"]]
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3530894603011922685)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'restaurants'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'reviews'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
