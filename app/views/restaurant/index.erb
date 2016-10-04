@@ -1,6 +1,9 @@
 <ol>
-<% @restaurants.each do |restaurant| %>
+<% @restaurant_scores.each do |restaurant, score| %>
   <li>
+    <%= restaurant.name %>
+    <%= restaurant.description %>
+    <%= score %>/5
     <%= link_to restaurant.name, "/restaurant/#{restaurant.id}" %>
     <%= restaurant.description %> <br>
   </li>
