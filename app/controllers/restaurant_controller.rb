@@ -1,13 +1,14 @@
 class RestaurantController < ApplicationController
-   def index
 
+   def index
+     @restaurants = Restaurant.all
    end
 
    def new
-
    end
 
    def create
+     @restaurant = Restaurant.create(restaurant_params)
      redirect_to action: "index"
    end
 
@@ -23,5 +24,11 @@ class RestaurantController < ApplicationController
 
    def destroy
      redirect_to action: "index"
+   end
+
+   private
+
+   def restaurant_params
+     params.permit(:name, :description)
    end
 end
