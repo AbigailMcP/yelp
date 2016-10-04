@@ -1,9 +1,11 @@
+<ol>
 <% @restaurants.each do |restaurant| %>
-  <%= link_to restaurant.name, "/restaurant/#{restaurant.id}" %>
-  <%= restaurant.description %>
-  <br>
+  <li>
+    <%= link_to restaurant.name, "/restaurant/#{restaurant.id}" %>
+    <%= restaurant.description %> <br>
+  </li>
   <% end %>
-
+</ol>
 <% if @restaurants.empty? %>
   <%= "There are no restaurants :'(" %>
 <% end %>
