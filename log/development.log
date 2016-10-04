@@ -60,3 +60,2434 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 [0m
+Started GET "/" for ::1 at 2016-10-04 11:40:51 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (6.9ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.0.1) lib/active_record/migration.rb:572:in `check_pending!'
+activerecord (5.0.0.1) lib/active_record/migration.rb:548:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.3ms)
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (107.0ms)
+Started GET "/restaurant" for ::1 at 2016-10-04 11:40:57 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.0.1) lib/active_record/migration.rb:572:in `check_pending!'
+activerecord (5.0.0.1) lib/active_record/migration.rb:548:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (74.7ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3530894603011922685);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20161003161101)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (19.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161003161101"]]
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(3530894603011922685)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'restaurants'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'restaurants_reviews'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'reviews'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (3.7ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+Started GET "/restaurant" for ::1 at 2016-10-04 11:41:41 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  Rendered restaurant/index.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 34ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/erce/Google Drive/Projects/Ruby/yelp/app/views/restaurant/index.erb:2: syntax error, unexpected $undefined, expecting ')'
+...);@output_buffer.safe_append='\'> - -->
+...                               ^
+/Users/erce/Google Drive/Projects/Ruby/yelp/app/views/restaurant/index.erb:5: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;   end 
+               ^
+/Users/erce/Google Drive/Projects/Ruby/yelp/app/views/restaurant/index.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+/Users/erce/Google Drive/Projects/Ruby/yelp/app/views/restaurant/index.erb:13: syntax error, unexpected keyword_end, expecting ')'):
+  
+app/views/restaurant/index.erb:2: syntax error, unexpected $undefined, expecting ')'
+app/views/restaurant/index.erb:5: syntax error, unexpected keyword_end, expecting ')'
+app/views/restaurant/index.erb:11: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/restaurant/index.erb:13: syntax error, unexpected keyword_end, expecting ')'
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (8.8ms)
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (91.0ms)
+Started GET "/restaurant" for ::1 at 2016-10-04 11:42:07 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (5.5ms)
+Completed 200 OK in 436ms (Views: 429.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/restaurant/new" for ::1 at 2016-10-04 11:42:16 +0100
+Processing by RestaurantController#new as HTML
+  Rendering restaurant/new.erb within layouts/application
+  Rendered restaurant/new.erb within layouts/application (2.8ms)
+Completed 200 OK in 57ms (Views: 52.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant" for ::1 at 2016-10-04 11:42:24 +0100
+Processing by RestaurantController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CHYlAq9sdF2Lv1Besav9rgCv1BpV/+CxJnQn/MF7U+mwBilCZHGKOph+ahkoiW+cjfYbfo4ara4fZgpCGLPPNQ==", "name"=>"ABI", "description"=>"SUSHI", "commit"=>"add"}
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.9ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "ABI"], ["description", "SUSHI"], ["created_at", 2016-10-04 10:42:24 UTC], ["updated_at", 2016-10-04 10:42:24 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/restaurant
+Completed 302 Found in 32ms (ActiveRecord: 8.5ms)
+
+
+Started GET "/restaurant" for ::1 at 2016-10-04 11:42:24 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (3.5ms)
+Completed 200 OK in 47ms (Views: 43.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:42:28 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (3.3ms)
+Completed 200 OK in 77ms (Views: 68.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:43:33 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (3.6ms)
+Completed 200 OK in 52ms (Views: 48.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:43:40 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.8ms)
+Completed 200 OK in 39ms (Views: 36.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:44:13 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (no implicit conversion of Fixnum into String):
+    1: <% @restaurants.each do |restaurant| %>
+    2:   <%= link_to restaurant.name, '/restaurant/' +restaurant.id %>
+    3:   <%= restaurant.description %>
+    4:   <% end %>
+    5: 
+  
+app/views/restaurant/index.erb:2:in `+'
+app/views/restaurant/index.erb:2:in `block in _app_views_restaurant_index_erb___879930862082928282_70107873563440'
+app/views/restaurant/index.erb:1:in `_app_views_restaurant_index_erb___879930862082928282_70107873563440'
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.1ms)
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (76.0ms)
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:44:28 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (1.8ms)
+Completed 200 OK in 32ms (Views: 28.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurant/+restaurant.id" for ::1 at 2016-10-04 11:44:30 +0100
+Processing by RestaurantController#show as 
+  Parameters: {"id"=>"+restaurant"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:44:30 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (1.6ms)
+Completed 200 OK in 37ms (Views: 33.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/+restaurant.id" for ::1 at 2016-10-04 11:44:32 +0100
+Processing by RestaurantController#show as 
+  Parameters: {"id"=>"+restaurant"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:44:32 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (1.7ms)
+Completed 200 OK in 36ms (Views: 33.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/+restaurant.id" for ::1 at 2016-10-04 11:44:47 +0100
+Processing by RestaurantController#show as 
+  Parameters: {"id"=>"+restaurant"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:44:47 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (1.8ms)
+Completed 200 OK in 31ms (Views: 28.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurant/+restaurant.id" for ::1 at 2016-10-04 11:44:49 +0100
+Processing by RestaurantController#show as 
+  Parameters: {"id"=>"+restaurant"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:44:49 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.5ms)
+Completed 200 OK in 34ms (Views: 30.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:44:58 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (4.2ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (no implicit conversion of Fixnum into String):
+    1: <% @restaurants.each do |restaurant| %>
+    2:   <%= link_to restaurant.name, '/restaurant/'+restaurant.id %>
+    3:   <%= restaurant.description %>
+    4:   <% end %>
+    5: 
+  
+app/views/restaurant/index.erb:2:in `+'
+app/views/restaurant/index.erb:2:in `block in _app_views_restaurant_index_erb___879930862082928282_70107904919980'
+app/views/restaurant/index.erb:1:in `_app_views_restaurant_index_erb___879930862082928282_70107904919980'
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.6ms)
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.5ms)
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (87.1ms)
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:45:36 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (1.8ms)
+Completed 200 OK in 37ms (Views: 34.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/restaurant.id" for ::1 at 2016-10-04 11:45:39 +0100
+Processing by RestaurantController#show as 
+  Parameters: {"id"=>"restaurant"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:45:39 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.6ms)
+Completed 200 OK in 57ms (Views: 53.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurant/restaurant.id" for ::1 at 2016-10-04 11:45:40 +0100
+Processing by RestaurantController#show as 
+  Parameters: {"id"=>"restaurant"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:45:40 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (1.7ms)
+Completed 200 OK in 38ms (Views: 34.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:46:01 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (1.8ms)
+Completed 200 OK in 41ms (Views: 38.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/restaurant.id" for ::1 at 2016-10-04 11:46:03 +0100
+Processing by RestaurantController#show as 
+  Parameters: {"id"=>"restaurant"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:46:03 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.3ms)
+Completed 200 OK in 37ms (Views: 34.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurant/restaurant.id" for ::1 at 2016-10-04 11:46:04 +0100
+Processing by RestaurantController#show as 
+  Parameters: {"id"=>"restaurant"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:46:04 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.5ms)
+Completed 200 OK in 50ms (Views: 45.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:46:16 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.0ms)
+Completed 200 OK in 35ms (Views: 32.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurant/ABI" for ::1 at 2016-10-04 11:46:21 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"ABI"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:46:21 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.5ms)
+Completed 200 OK in 64ms (Views: 56.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurant/ABI" for ::1 at 2016-10-04 11:46:22 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"ABI"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:46:22 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (1.9ms)
+Completed 200 OK in 37ms (Views: 32.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:46:36 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (9.1ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `_id' for #<Restaurant:0x007f8689b8a698>):
+    1: <% @restaurants.each do |restaurant| %>
+    2:   <%= link_to restaurant.name, '/restaurant/'+"#{restaurant._id}" %>
+    3:   <%= restaurant.description %>
+    4:   <% end %>
+    5: 
+  
+app/views/restaurant/index.erb:2:in `block in _app_views_restaurant_index_erb___879930862082928282_70107903316460'
+app/views/restaurant/index.erb:1:in `_app_views_restaurant_index_erb___879930862082928282_70107903316460'
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.6ms)
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.3ms)
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (88.9ms)
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:47:27 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (1.7ms)
+Completed 200 OK in 43ms (Views: 39.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:47:31 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.2ms)
+Completed 200 OK in 40ms (Views: 37.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:47:44 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.0ms)
+Completed 200 OK in 40ms (Views: 36.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 11:47:55 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:47:55 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (1.8ms)
+Completed 200 OK in 31ms (Views: 28.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 11:47:56 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:47:56 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (1.7ms)
+Completed 200 OK in 31ms (Views: 27.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 11:47:57 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:47:57 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (1.7ms)
+Completed 200 OK in 30ms (Views: 25.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/new" for ::1 at 2016-10-04 11:48:01 +0100
+Processing by RestaurantController#new as HTML
+  Rendering restaurant/new.erb within layouts/application
+  Rendered restaurant/new.erb within layouts/application (1.1ms)
+Completed 200 OK in 32ms (Views: 28.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant" for ::1 at 2016-10-04 11:48:06 +0100
+Processing by RestaurantController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"06FejXwWI4SnBL0ShY309eILQBIo4DpWcq8CI25CQURr0VLNtwvd47TFh1Ucr2bHb1KPdvMFd0lLvS+dt4rdmA==", "name"=>"erce", "description"=>"kebab", "commit"=>"add"}
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "erce"], ["description", "kebab"], ["created_at", 2016-10-04 10:48:06 UTC], ["updated_at", 2016-10-04 10:48:06 UTC]]
+  [1m[35m (7.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/restaurant
+Completed 302 Found in 14ms (ActiveRecord: 8.9ms)
+
+
+Started GET "/restaurant" for ::1 at 2016-10-04 11:48:07 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.2ms)
+Completed 200 OK in 35ms (Views: 31.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurant/2" for ::1 at 2016-10-04 11:48:12 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:48:12 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (1.9ms)
+Completed 200 OK in 35ms (Views: 30.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurant/2" for ::1 at 2016-10-04 11:48:13 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:48:13 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (1.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (4.0ms)
+Completed 200 OK in 53ms (Views: 46.4ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/restaurant/2" for ::1 at 2016-10-04 11:48:13 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 7ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:48:13 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.4ms)
+Completed 200 OK in 44ms (Views: 39.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurant/2" for ::1 at 2016-10-04 11:48:13 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 21ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:48:13 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.3ms)
+Completed 200 OK in 41ms (Views: 37.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurant/2" for ::1 at 2016-10-04 11:48:13 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:48:13 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.1ms)
+Completed 200 OK in 39ms (Views: 35.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/2" for ::1 at 2016-10-04 11:48:13 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 24ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:48:13 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.0ms)
+Completed 200 OK in 32ms (Views: 28.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/2" for ::1 at 2016-10-04 11:48:14 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 12ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:48:14 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.0ms)
+Completed 200 OK in 34ms (Views: 30.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurant/2" for ::1 at 2016-10-04 11:48:14 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:48:14 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (1.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (3.9ms)
+Completed 200 OK in 57ms (Views: 50.1ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/restaurant/2" for ::1 at 2016-10-04 11:48:14 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:48:14 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.2ms)
+Completed 200 OK in 45ms (Views: 40.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurant/2" for ::1 at 2016-10-04 11:48:14 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 41ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:48:14 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (1.9ms)
+Completed 200 OK in 37ms (Views: 34.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:48:48 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (1.9ms)
+Completed 200 OK in 35ms (Views: 32.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:48:51 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.1ms)
+Completed 200 OK in 37ms (Views: 33.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/new" for ::1 at 2016-10-04 11:48:55 +0100
+Processing by RestaurantController#new as HTML
+  Rendering restaurant/new.erb within layouts/application
+  Rendered restaurant/new.erb within layouts/application (1.4ms)
+Completed 200 OK in 36ms (Views: 33.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant" for ::1 at 2016-10-04 11:49:01 +0100
+Processing by RestaurantController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"WFJzCfvidFfhNbfMOa/qg5UKaMxQDiZ9Y6spseoVQSTgIn9JMP+KMPL0jYugjXixGFOnqIvra2JauQQPM93d+A==", "name"=>"yep", "description"=>"lunch", "commit"=>"add"}
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "yep"], ["description", "lunch"], ["created_at", 2016-10-04 10:49:01 UTC], ["updated_at", 2016-10-04 10:49:01 UTC]]
+  [1m[35m (5.5ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/restaurant
+Completed 302 Found in 13ms (ActiveRecord: 7.0ms)
+
+
+Started GET "/restaurant" for ::1 at 2016-10-04 11:49:01 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.1ms)
+Completed 200 OK in 40ms (Views: 36.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurant/3" for ::1 at 2016-10-04 11:49:03 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"3"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:49:03 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.0ms)
+Completed 200 OK in 47ms (Views: 42.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurant/3" for ::1 at 2016-10-04 11:49:04 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"3"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:49:04 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (6.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (9.2ms)
+Completed 200 OK in 62ms (Views: 49.8ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:49:39 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (139.6ms)
+Completed 500 Internal Server Error in 149ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `br' for #<#<Class:0x007f8685a35288>:0x007f86852d04c0>):
+    1: <% @restaurants.each do |restaurant| %>
+    2:   <%= link_to restaurant.name, "/restaurant/#{restaurant.id}" %>
+    3:   <%= restaurant.description %>
+    4:   <%= br %>
+    5:   <% end %>
+    6: 
+    7: <% if @restaurants.empty? %>
+  
+app/views/restaurant/index.erb:4:in `block in _app_views_restaurant_index_erb___879930862082928282_70107868333900'
+app/views/restaurant/index.erb:1:in `_app_views_restaurant_index_erb___879930862082928282_70107868333900'
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (7.7ms)
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.1ms)
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (81.9ms)
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:49:54 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.3ms)
+Completed 200 OK in 40ms (Views: 37.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:50:05 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.1ms)
+Completed 200 OK in 41ms (Views: 37.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 11:50:09 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:50:09 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.5ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (4.0ms)
+Completed 200 OK in 71ms (Views: 66.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/restaurant/2" for ::1 at 2016-10-04 11:50:10 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:50:10 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.7ms)
+Completed 200 OK in 40ms (Views: 36.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurant/3" for ::1 at 2016-10-04 11:50:11 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"3"}
+Redirected to http://localhost:3000/restaurant/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:50:11 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.4ms)
+Completed 200 OK in 71ms (Views: 66.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:57:38 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (8.7ms)
+Completed 200 OK in 51ms (Views: 44.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:40 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:41 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:41 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:41 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:41 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:41 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:41 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:41 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:41 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:41 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:41 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:41 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:41 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:41 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:41 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:41 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:41 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:41 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:41 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:41 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:41 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/abi" for ::1 at 2016-10-04 11:57:41 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"abi"}
+Redirected to http://localhost:3000/restaurant/abi
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:57:50 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (6.2ms)
+Completed 200 OK in 41ms (Views: 35.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:52 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:53 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:53 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:53 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:53 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:53 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:53 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:53 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:53 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:53 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:53 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:53 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:57:53 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/2" for ::1 at 2016-10-04 11:58:00 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:00 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:00 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:00 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:00 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:00 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:00 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/2" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"2"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/:id" for ::1 at 2016-10-04 11:58:01 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>":id"}
+Redirected to http://localhost:3000/restaurant/:id
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 11:58:49 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (6.0ms)
+Completed 200 OK in 48ms (Views: 40.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/2" for ::1 at 2016-10-04 11:58:51 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (18.5ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <p>Chicken shop</p>
+    2: 
+    3: 
+    4: <% @restaurants.each do |restaurant| %>
+    5:   <%= link_to restaurant.name, "/restaurant/#{restaurant.id}" %>
+    6:   <%= restaurant.description %>
+    7:   <br>
+  
+app/views/restaurant/show.erb:4:in `_app_views_restaurant_show_erb__4480783577049500645_70107873077740'
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.2ms)
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (82.4ms)
+Started GET "/restaurant/2" for ::1 at 2016-10-04 11:59:42 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"2"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @restaurants.each do |restaurant| %>
+    2:   <%= link_to restaurant.name, "/restaurant/#{restaurant.id}" %>
+    3:   <%= restaurant.description %>
+    4:   <br>
+  
+app/views/restaurant/show.erb:1:in `_app_views_restaurant_show_erb__4480783577049500645_70107906380160'
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.9ms)
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (85.8ms)
+Started GET "/restaurant/2" for ::1 at 2016-10-04 12:01:15 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"2"}
+Completed 500 Internal Server Error in 103ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `restaurant' for #<RestaurantController:0x007f8687e269f8>
+Did you mean?  restaurant_url):
+  
+app/controllers/restaurant_controller.rb:16:in `show'
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.2ms)
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (178.2ms)
+Started GET "/restaurant/2" for ::1 at 2016-10-04 12:01:28 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.5ms)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @restaurants.each do |restaurant| %>
+    2:   <%= link_to restaurant.name, "/restaurant/#{restaurant.id}" %>
+    3:   <%= restaurant.description %>
+    4:   <br>
+  
+app/views/restaurant/show.erb:1:in `_app_views_restaurant_show_erb__4480783577049500645_70107848745880'
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.0ms)
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (87.6ms)
+Started GET "/restaurant/" for ::1 at 2016-10-04 12:02:07 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (1.8ms)
+Completed 200 OK in 49ms (Views: 46.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/2" for ::1 at 2016-10-04 12:02:09 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (1.4ms)
+Completed 500 Internal Server Error in 54ms (ActiveRecord: 10.1ms)
+
+
+  
+SyntaxError (/Users/erce/Google Drive/Projects/Ruby/yelp/app/views/restaurant/show.erb:6: syntax error, unexpected keyword_ensure, expecting end-of-input):
+  
+app/views/restaurant/show.erb:6: syntax error, unexpected keyword_ensure, expecting end-of-input
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.8ms)
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/erce/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (81.6ms)
+Started GET "/restaurant/" for ::1 at 2016-10-04 12:02:19 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (1.0ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (6.2ms)
+Completed 200 OK in 109ms (Views: 98.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/restaurant/3" for ::1 at 2016-10-04 12:02:21 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mRestaurant Load (12.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.8ms)
+Completed 200 OK in 80ms (Views: 52.7ms | ActiveRecord: 18.7ms)
+
+
+Started GET "/restaurant/1" for ::1 at 2016-10-04 12:02:24 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (1.5ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.8ms)
+Completed 200 OK in 80ms (Views: 70.2ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 12:06:02 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.3ms)
+Completed 200 OK in 39ms (Views: 36.0ms | ActiveRecord: 0.4ms)
+
+

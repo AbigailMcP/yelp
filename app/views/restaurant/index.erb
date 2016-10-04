@@ -1,6 +1,7 @@
 <% @restaurants.each do |restaurant| %>
-  <%= restaurant.name %> -
+  <%= link_to restaurant.name, "/restaurant/#{restaurant.id}" %>
   <%= restaurant.description %>
+  <br>
   <% end %>
 
 <% if @restaurants.empty? %>

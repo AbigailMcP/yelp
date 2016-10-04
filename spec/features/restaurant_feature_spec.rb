@@ -32,10 +32,11 @@ feature 'creating restaurants' do
 end
 
 feature 'showing single restaurant' do
+let(:Chicken_shop) { Restaurant.create(name: "Chicken shop", description: "Great") }
 
   scenario 'can click through to individual restaurant page' do
-    visit '/restaurant/1'
-    expect(page).to have_content('Chicken shop')
+    visit '/restaurant/#{Chicken_shop.id}'
+    expect(page).to have_content('Great')
   end
 
 end
