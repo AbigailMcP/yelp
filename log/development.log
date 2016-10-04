@@ -60,3 +60,284 @@ WHERE c.contype = 'f'
   AND t3.nspname = ANY (current_schemas(false))
 ORDER BY c.conname
 [0m
+Started GET "/" for ::1 at 2016-10-04 11:57:16 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+	bin/rails db:migrate RAILS_ENV=development
+
+):
+  
+activerecord (5.0.0.1) lib/active_record/migration.rb:572:in `check_pending!'
+activerecord (5.0.0.1) lib/active_record/migration.rb:548:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.0.1) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.3.1) lib/web_console/middleware.rb:131:in `call_app'
+web-console (3.3.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.3.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.0.1) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `block in tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.0.1) lib/active_support/tagged_logging.rb:70:in `tagged'
+railties (5.0.0.1) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.0) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.0.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.0.1) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.0.1) lib/rails/engine.rb:522:in `call'
+puma (3.6.0) lib/puma/configuration.rb:225:in `call'
+puma (3.6.0) lib/puma/server.rb:578:in `handle_request'
+puma (3.6.0) lib/puma/server.rb:415:in `process_client'
+puma (3.6.0) lib/puma/server.rb:275:in `block in run'
+puma (3.6.0) lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering /Users/nephast/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering /Users/nephast/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered /Users/nephast/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.3ms)
+  Rendering /Users/nephast/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /Users/nephast/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendering /Users/nephast/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /Users/nephast/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /Users/nephast/.rvm/gems/ruby-2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (113.2ms)
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(3530894603011922685);[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DeviseCreateUsers (20161003161101)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (49.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" inet, "last_sign_in_ip" inet, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  [1m[35m (1.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20161003161101"]]
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(3530894603011922685)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'restaurants'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'restaurants_reviews'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'reviews'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+Started GET "/" for ::1 at 2016-10-04 11:58:19 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (1.2ms)
+Completed 200 OK in 533ms (Views: 517.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant" for ::1 at 2016-10-04 11:59:30 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (15.6ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (23.3ms)
+Completed 200 OK in 73ms (Views: 35.9ms | ActiveRecord: 19.5ms)
+
+
+Started GET "/restaurant/create" for ::1 at 2016-10-04 12:02:19 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"create"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.4ms)
+Completed 200 OK in 28ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/new" for ::1 at 2016-10-04 12:02:28 +0100
+Processing by RestaurantController#new as HTML
+  Rendering restaurant/new.erb within layouts/application
+  Rendered restaurant/new.erb within layouts/application (1.6ms)
+Completed 200 OK in 64ms (Views: 61.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant" for ::1 at 2016-10-04 12:02:46 +0100
+Processing by RestaurantController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A1E4eAeJ0ZEu/IgLkyK2XDpjs6bMwNvo9sM4sh40DpxXcJqgu7JJsr01OdyPr5FAiXWBVEcy7GgcZl8MwhZftw==", "name"=>"hello", "description"=>"kebab", "commit"=>"add"}
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "hello"], ["description", "kebab"], ["created_at", 2016-10-04 11:02:46 UTC], ["updated_at", 2016-10-04 11:02:46 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/restaurant
+Completed 302 Found in 23ms (ActiveRecord: 5.5ms)
+
+
+Started GET "/restaurant" for ::1 at 2016-10-04 12:02:46 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.8ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (3.0ms)
+Completed 200 OK in 41ms (Views: 37.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/restaurant/create" for ::1 at 2016-10-04 12:02:53 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"create"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.5ms)
+Completed 200 OK in 39ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/create" for ::1 at 2016-10-04 12:02:57 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"create"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.4ms)
+Completed 200 OK in 48ms (Views: 45.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 12:03:07 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.4ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.1ms)
+Completed 200 OK in 50ms (Views: 45.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/restaurant/index" for ::1 at 2016-10-04 12:03:25 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"index"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.4ms)
+Completed 200 OK in 50ms (Views: 47.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 12:03:34 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.7ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (2.8ms)
+Completed 200 OK in 36ms (Views: 31.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/restaurant/new" for ::1 at 2016-10-04 12:04:59 +0100
+Processing by RestaurantController#new as HTML
+  Rendering restaurant/new.erb within layouts/application
+  Rendered restaurant/new.erb within layouts/application (1.6ms)
+Completed 200 OK in 36ms (Views: 33.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/restaurant" for ::1 at 2016-10-04 12:05:06 +0100
+Processing by RestaurantController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+Tao62oMYBpXAIAYRCPQN7SEaV6/sibiSpcAJNKyKuStFwoz1jf4OcTJMc9YrvcrB5JbrDRAEWKgMmeaDpB7zw==", "name"=>"jo", "description"=>"chicken", "commit"=>"add"}
+Unpermitted parameters: utf8, authenticity_token, commit
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "restaurants" ("name", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["name", "jo"], ["description", "chicken"], ["created_at", 2016-10-04 11:05:06 UTC], ["updated_at", 2016-10-04 11:05:06 UTC]]
+  [1m[35m (15.8ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://localhost:3000/restaurant
+Completed 302 Found in 21ms (ActiveRecord: 16.7ms)
+
+
+Started GET "/restaurant" for ::1 at 2016-10-04 12:05:06 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.3ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (1.5ms)
+Completed 200 OK in 42ms (Views: 38.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/restaurant/index" for ::1 at 2016-10-04 12:05:12 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"index"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.5ms)
+Completed 200 OK in 41ms (Views: 38.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/index" for ::1 at 2016-10-04 12:07:46 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"index"}
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (2.5ms)
+Completed 200 OK in 257ms (Views: 245.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/restaurant/" for ::1 at 2016-10-04 12:07:51 +0100
+Processing by RestaurantController#index as HTML
+  Rendering restaurant/index.erb within layouts/application
+  [1m[36mRestaurant Load (0.9ms)[0m  [1m[34mSELECT "restaurants".* FROM "restaurants"[0m
+  Rendered restaurant/index.erb within layouts/application (14.2ms)
+Completed 200 OK in 55ms (Views: 38.1ms | ActiveRecord: 6.7ms)
+
+
+Started GET "/" for ::1 at 2016-10-04 13:10:12 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ApplicationController#home as HTML
+  Rendering application/home.erb within layouts/application
+  Rendered application/home.erb within layouts/application (2.2ms)
+Completed 200 OK in 447ms (Views: 435.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/sign_up" for ::1 at 2016-10-04 13:10:15 +0100
+Processing by UserController#sign_up as HTML
+  Rendering user/sign_up.erb within layouts/application
+  Rendered user/sign_up.erb within layouts/application (1.8ms)
+Completed 200 OK in 32ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/user" for ::1 at 2016-10-04 13:10:26 +0100
+Processing by UserController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Z8Me9sWDKnfg5IKyyNtjb59b6voZVU+F3hTXyF9o1Eoz4rwuebiyVHMtM2XUVkRzLE3YCJKneAU0sbB2g0qFYQ==", "email"=>"hello@hi.com", "password"=>"[FILTERED]", "commit"=>"Sign up!"}
+  Rendering user/index.erb within layouts/application
+  [1m[36mUser Load (38.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  Rendered user/index.erb within layouts/application (46.0ms)
+Completed 200 OK in 82ms (Views: 36.9ms | ActiveRecord: 41.7ms)
+
+
