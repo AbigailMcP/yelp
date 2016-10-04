@@ -1,8 +1,12 @@
+<ol>
 <% @restaurants.each do |restaurant| %>
-  <%= restaurant.name %> -
-  <%= restaurant.description %>
+  <li>
+    <%= restaurant.name %>
+    <%= restaurant.description %>
+    <input type="button" onclick="location.href = '/restaurant/<%= restaurant.id%>';" value="View restaurant" />
+  </li>
   <% end %>
-
+</ol>
 <% if @restaurants.empty? %>
   <%= "<p>There are no restaurants</p>" %>
 <% end %>

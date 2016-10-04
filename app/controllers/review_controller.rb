@@ -5,17 +5,19 @@ class ReviewController < ApplicationController
 
   def create
     @restaurant = Restaurant.find(params[:restaurant_id])
-    @review = @restaurant.reviews.create(score: 2, comment: "good")
-    p @review.errors.messages
-    redirect_to "/restaurant/#{params[:restaurant_id]}"
+    @review = @restaurant.reviews.create(review_parameters)
+    redirect_to "/restaurant/#{params[:restaurant_id]}/review"
   end
 
   def index
+    @restaurant = Restaurant.find(params[:restaurant_id])
+    @reviews = @restaurant.reviews
   end
 
   private
 
   def review_parameters
-    params.permit(:review)
+    params[:review][:score] = params[:review][:score].to_i
+    params[:review].permit(:score, :comment)
   end
 end
