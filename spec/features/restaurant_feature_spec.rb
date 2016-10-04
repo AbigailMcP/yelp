@@ -34,7 +34,10 @@ end
 feature 'showing single restaurant' do
 
   scenario 'can click through to individual restaurant page' do
-    visit '/restaurant/1'
+    visit '/restaurant/new'
+    fill_in('name', with: 'Chicken shop')
+    click_on('add')
+    click_on('View restaurant')
     expect(page).to have_content('Chicken shop')
   end
 

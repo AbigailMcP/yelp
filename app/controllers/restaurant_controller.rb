@@ -2,6 +2,8 @@ class RestaurantController < ApplicationController
 
    def index
      @restaurants = Restaurant.all
+     @scores = @restaurants.map(&:get_average_score)
+     @restaurant_scores = @restaurants.zip(@scores)
    end
 
    def new
@@ -13,6 +15,8 @@ class RestaurantController < ApplicationController
    end
 
    def show
+     @restaurant = Restaurant.find(params[:id])
+     @score = @restaurant.get_average_score
    end
 
    def edit

@@ -1,8 +1,9 @@
 <ol>
-<% @restaurants.each do |restaurant| %>
+<% @restaurant_scores.each do |restaurant, score| %>
   <li>
     <%= restaurant.name %>
     <%= restaurant.description %>
+    <%= score %>/5
     <input type="button" onclick="location.href = '/restaurant/<%= restaurant.id%>';" value="View restaurant" />
   </li>
   <% end %>
