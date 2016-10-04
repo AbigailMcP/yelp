@@ -1,1 +1,3 @@
-<p>Chicken shop</p>
+  <%= @restaurant.name %>
+  <%= @restaurant.description %>
+  <%= button_to "edit", "/restaurant/#{@restaurant.id}/edit", method: :get %>
