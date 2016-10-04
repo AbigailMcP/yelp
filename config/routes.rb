@@ -4,6 +4,6 @@ Rails.application.routes.draw do
   resources :restaurant do
     resources :review, only: [:index, :new, :create]
   end
-  root 'restaurants#index'
+  root 'application#home'
 
 end
