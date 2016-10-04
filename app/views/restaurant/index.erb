@@ -4,10 +4,11 @@
     <%= restaurant.name %>
     <%= restaurant.description %>
     <%= score %>/5
-    <input type="button" onclick="location.href = '/restaurant/<%= restaurant.id%>';" value="View restaurant" />
+    <%= link_to restaurant.name, "/restaurant/#{restaurant.id}" %>
+    <%= restaurant.description %> <br>
   </li>
   <% end %>
 </ol>
 <% if @restaurants.empty? %>
-  <%= "<p>There are no restaurants</p>" %>
+  <%= "There are no restaurants :'(" %>
 <% end %>
