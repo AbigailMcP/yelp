@@ -32,30 +32,43 @@ feature 'creating restaurants' do
 end
 
 feature 'showing single restaurant' do
+let(:shop) { Restaurant.create(name: "Chicken shop", description: "Great") }
 
   scenario 'can click through to individual restaurant page' do
-    visit '/restaurant/1'
-    expect(page).to have_content('Chicken shop')
+    visit "/restaurant/#{shop.id}"
+    expect(page).to have_content('Great')
   end
 
 end
 
 feature 'editing restaurant' do
+  let(:shop) { Restaurant.create(name: "Chicken shop", description: "Great") }
 
   scenario 'can edit individual restaurant' do
-    visit '/restaurant/1/edit'
-    expect(page).to have_content('Edit restaurant')
+    visit "/restaurant/#{shop.id}"
+    click_on('edit')
+    expect(page).to have_current_path("/restaurant/#{shop.id}/edit")
   end
 
-end
-
-feature 'editing restaurant' do
-
-  scenario 'can edit individual restaurant' do
-    visit '/restaurant/1/edit'
-    fill_in('restaurant', with: 'Fish shop')
+  scenario('can save edits to database') do
+    visit "/restaurant/#{shop.id}"
+    click_on('edit')
+    expect(page).to have_current_path("/restaurant/#{shop.id}/edit")
+    fill_in("restaurant[name]", with: 'Sushi shop')
     click_on('save')
-    expect(page).to have_content('Chicken shop')
+    expect(page).to have_current_path("/restaurant")
+    expect(page).to have_content('Sushi shop')
   end
 
 end
+
+  feature 'deleting restaurant' do
+    let(:shop) { Restaurant.create(name: "Chicken shop", description: "Great") }
+
+    scenario 'can delete an individual restaurant' do
+      visit "/restaurant/#{shop.id}"
+      click_on('delete')
+      expect(page).to have_current_path("/restaurant")
+      expect(page).not_to have_content('Chicken shop')
+    end
+  end
