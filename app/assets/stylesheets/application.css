@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+
+.restaurant-container {
+  background-color: #DDE9F0;
+  margin: 15px 0px 15px 0px;
+  border: 2px solid grey;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+}
+
+.restaurant-index {
+  text-align:center;
+  font-family: 'Open Sans', sans-serif;
+}

@@ -1,6 +1,6 @@
 <p>Add a restaurant</p>
 
-<%= form_tag("/restaurant", method: "post") do %>
+<%= form_tag("/restaurant", method: "post", :class => "form-inline") do %>
   <%= label_tag(:name, "Restaurant name:") %>
   <%= text_field_tag(:name) %>
   <%= label_tag(:description, "Description:") %>

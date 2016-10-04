@@ -1,13 +1,21 @@
-<ol>
-<% @restaurant_scores.each do |restaurant, score| %>
-  <li>
-    <%= restaurant.name %>
-    <%= restaurant.description %>
-    <%= score %>/5
-    <input type="button" onclick="location.href = '/restaurant/<%= restaurant.id%>';" value="View restaurant" />
-  </li>
-  <% end %>
-</ol>
-<% if @restaurants.empty? %>
-  <%= "<p>There are no restaurants</p>" %>
-<% end %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <div class="restaurant-container"><h1 class="restaurant-index">Nearby Restaurants</h1></div>
+        <% @restaurant_scores.each do |restaurant, score| %>
+         <div class="restaurant-container">
+          Name: <%= restaurant.name %><br>
+          Description: <%= restaurant.description %><br>
+          Rating: <%= score %>/5 <br>
+          <input type="button" onclick="location.href = '/restaurant/<%= restaurant.id%>';" value="View restaurant" />
+        </div>
+        <% end %>
+    <% if @restaurants.empty? %>
+      <%= "<p>There are no restaurants</p>" %>
+    <% end %>
+  </div>
+  <div class="col-md-2"></div>
+  </div>
+</div>
