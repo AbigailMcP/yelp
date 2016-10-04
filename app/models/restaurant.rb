@@ -6,4 +6,5 @@ class Restaurant < ApplicationRecord
     reviews = self.reviews.to_ary
     reviews.empty? ? 0 : reviews.map(&:score).inject{ |sum, el| sum + el }.to_f / reviews.size
   end
+
 end
