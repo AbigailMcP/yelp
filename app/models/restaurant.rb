@@ -4,7 +4,8 @@ class Restaurant < ApplicationRecord
 
   def get_average_score
     reviews = self.reviews.to_ary
-    reviews.empty? ? 0 : reviews.map(&:score).inject{ |sum, el| sum + el }.to_f / reviews.size
+    score = reviews.map(&:score).inject{ |sum, el| sum + el }.to_f / reviews.size
+    reviews.empty? ? 0 : score.round(1)
   end
 
 end

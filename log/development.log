@@ -3384,3 +3384,13 @@ Processing by RestaurantController#show as HTML
 Completed 200 OK in 44ms (Views: 37.3ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/restaurant/1/" for ::1 at 2016-10-04 15:20:30 +0100
+Processing by RestaurantController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mRestaurant Load (0.2ms)[0m  [1m[34mSELECT  "restaurants".* FROM "restaurants" WHERE "restaurants"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."restaurant_id" = $1[0m  [["restaurant_id", 1]]
+  Rendering restaurant/show.erb within layouts/application
+  Rendered restaurant/show.erb within layouts/application (0.5ms)
+Completed 200 OK in 185ms (Views: 119.6ms | ActiveRecord: 9.9ms)
+
+
