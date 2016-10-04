@@ -9,9 +9,10 @@
   </head>
 
   <body>
-    <form action='/sign_up' method='GET'>
+    <form action='/users/sign_up' method='GET'>
     <button type="submit">Sign up</button>
     </form>
+    <%= button_to('Sign Out', destroy_user_session_path, {method: :delete}) %> 
     <%= yield %>
   </body>
 </html>
