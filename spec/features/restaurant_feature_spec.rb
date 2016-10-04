@@ -61,3 +61,14 @@ feature 'editing restaurant' do
   end
 
 end
+
+  feature 'deleting restaurant' do
+    let(:shop) { Restaurant.create(name: "Chicken shop", description: "Great") }
+
+    scenario 'can delete an individual restaurant' do
+      visit "/restaurant/#{shop.id}"
+      click_on('delete')
+      expect(page).to have_current_path("/restaurant")
+      expect(page).not_to have_content('Chicken shop')
+    end
+  end
