@@ -20,6 +20,9 @@ class RestaurantController < ApplicationController
      @restaurant = Restaurant.find(params[:id])
      @score = @restaurant.get_average_score
      @reviews = @restaurant.reviews
+    #  @reviews.each do |review|
+    #  related_mails << User.find(review.user_id).email
+    #  end
    end
 
    def edit
