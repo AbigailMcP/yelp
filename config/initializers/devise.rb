@@ -1,5 +1,7 @@
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
+FACEBOOK_CONFIG = YAML.load_file("#{::Rails.root}/facebook_secrets.yml")[::Rails.env]
+
 Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
@@ -8,6 +10,8 @@ Devise.setup do |config|
   # by default. You can change it below and use your own secret key.
   # config.secret_key = '13b176c62b918cdde81c6cd3591bb66bf8769513e41b0fcdc854fbfd38e31877147f4bba3f527204804da037ad135c67cc3c5e21be5b32b0ce9c790a92155b1c'
 
+  config.omniauth :facebook, FACEBOOK_CONFIG['app_id'], FACEBOOK_CONFIG['secret'],
+                  callback_url: "http://localhost:3000/users"
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
