@@ -10,9 +10,15 @@
 
   <body>
     <form action='/users/sign_up' method='GET'>
-    <button type="submit">Sign up</button>
+    <button type="submit">Sign up page</button>
     </form>
-    <%= button_to('Sign Out', destroy_user_session_path, {method: :delete}) %> 
+    <%= button_to('Sign Out', destroy_user_session_path, {method: :delete}) %>
+    <% flash.each do |key, value| %>
+      <div class="alert alert-<%= key %>">
+        <a href="#" data-dismiss="alert" class="close">x</a>
+        <%= value %>
+      </div>
+    <% end %>
     <%= yield %>
   </body>
 </html>
