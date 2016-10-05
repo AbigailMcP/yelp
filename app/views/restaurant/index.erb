@@ -1,6 +1,7 @@
 <ol>
 <% @restaurant_scores.each do |restaurant, score| %>
   <li>
+    <%= image_tag restaurant.image.url(:thumb) %>
     <%= restaurant.name %>
     <%= restaurant.description %>
     <%= score %>/5
