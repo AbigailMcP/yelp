@@ -7,11 +7,12 @@ class RestaurantController < ApplicationController
    end
 
    def new
-     @restaurant = Restaurant.new
+     user_signed_in? ? (@restaurant = Restaurant.new) : (redirect_to action: "index")
    end
 
    def create
-     @restaurant = Restaurant.create(restaurant_params_new)
+     @user = User.find(current_user.id)
+     @restaurant = @user.restaurants.create(restaurant_params_new)
      redirect_to action: "index"
    end
 

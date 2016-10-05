@@ -1,5 +1,6 @@
 class Restaurant < ApplicationRecord
   has_many :reviews
+  belongs_to :user
   validates :name, presence: true
 
   def get_average_score
