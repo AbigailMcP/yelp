@@ -7,9 +7,21 @@ def login
   click_on('Log in')
 end
 
+def signout
+  click_button("Sign Out")
+end
+
 def signup
   visit('/users/sign_up')
   fill_in("user_email", with: 'er@ce.com')
+  fill_in("user_password", with: '123456')
+  fill_in("user_password_confirmation", with: '123456')
+  click_on('Sign up!')
+end
+
+def signup2
+  visit('/users/sign_up')
+  fill_in("user_email", with: 'ts@ts.com')
   fill_in("user_password", with: '123456')
   fill_in("user_password_confirmation", with: '123456')
   click_on('Sign up!')

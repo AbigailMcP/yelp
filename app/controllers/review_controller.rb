@@ -5,15 +5,10 @@ class ReviewController < ApplicationController
 
   def create
     if user_signed_in?
-      # Find the User, find the restaurant to make review
       @user = User.find(current_user.id)
       @restaurant = Restaurant.find(params[:restaurant_id])
-      # make a new ruby object
-      @review = @restaurant.reviews.new(review_parameters)
-      #add the review to it's associated user
-      @user.reviews << @review
-      # finally save the review with it's ass. restaurant and user
-      @review.save
+      review = Review.add_review(@user, @restaurant, review_parameters)
+      flash[:alert] = review.errors[:review]
       redirect_to "/restaurant/#{params[:restaurant_id]}/review"
     else
       redirect_to "index"

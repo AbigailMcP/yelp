@@ -12,7 +12,10 @@
     <form action='/users/sign_up' method='GET'>
     <button type="submit">Sign up</button>
     </form>
-    <%= button_to('Sign Out', destroy_user_session_path, {method: :delete}) %> 
+    <%= button_to('Sign Out', destroy_user_session_path, {method: :delete}) %>
+    <% if flash[:alert] %>
+      <div class="alert"><%= flash[:alert] %> </div>
+    <% end %>
     <%= yield %>
   </body>
 </html>
