@@ -13,7 +13,16 @@
  *= require_tree .
  *= require_self
  */
+ul {padding-left: 0px;}
 
+ li {
+   list-style: none;
+   text-align: center;
+ }
+.fb-btn{
+background-image: url('http://i.stack.imgur.com/SoLOz.png');
+background-size: 100% 100%;
+}
 .restaurant-container {
   background-color: #DDE9F0;
   margin: 15px 0px 15px 0px;
@@ -25,4 +34,50 @@
 .restaurant-index {
   text-align:center;
   font-family: 'Open Sans', sans-serif;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+    min-height: 600px;
+    background-image: url('http://www.accidentaltravelwriter.net/.a/6a0148c6f68c01970c01a51142ee2a970c-pi');
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #2B4570;
+    align-content: center;
+ }
+
+.transparent-grey {
+  background-color: rgba(234, 234, 234, 0.5);
+  border-radius: 25px;
+  width: 95%;
+  margin-left: 2.5%;
+  padding-bottom: 25px;
+
+}
+
+.top-buffer { margin-top:50px; }
+
+.footer {
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-top: 3px solid #eaeaea;
+  text-align: center;
+  background-color: white;
+  position:fixed;
+  left:0px;
+  bottom:10px;
+  height:30px;
+  width:100%;
+}
+
+.login-container {
+  align-content: center;
+  align-items: center;
+  background-color: #eae9e9;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #d6d2d2;
 }

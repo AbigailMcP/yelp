@@ -15,33 +15,40 @@
     <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">J-EATS</a>
+      <a class="navbar-brand" href="/">J-EATS</a>
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="/">Home</a></li>
+      <% if user_signed_in? %>
       <li><a href="/restaurant">View Listings</a></li>
       <li><a href="/restaurant/new">Add Listing</a></li>
+      <% end %>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <% if user_signed_in? %>
+      <li><p class="navbar-text">Signed In As: <%= current_user.email %></p></li>
+      <li><%= link_to('Sign Out', destroy_user_session_path, {method: :delete}) %></li>
+      <% else %>
+      <li><%= link_to('Sign In', new_user_session_path, {method: :get}) %></li>
+      <li><%= link_to('Sign Up', new_user_registration_path, {method: :get}) %></li>
+      <% end %>
     </ul>
   </div>
 </nav>
+<div class="row">
+  <% flash.each do |key, value| %>
+    <div class="alert alert-info">
+      <%= value %>
+      <a href="#" data-dismiss="alert" class="close">x</a>
+    </div>
+  <% end %>
+</div>
 
-    <form action='/users/sign_up' method='GET'>
-    <button type="submit">Sign up page</button>
-    </form>
-    <%= button_to('Sign Out', destroy_user_session_path, {method: :delete}) %>
-    <% if flash[:alert] %>
-      <div class="alert"><%= flash[:alert] %> </div>
-      <% end %>
-    <% flash.each do |key, value| %>
-      <div class="alert alert-<%= key %>">
-        <a href="#" data-dismiss="alert" class="close">x</a>
-        <%= value %>
-      </div>
-    <% end %>
-    <% if user_signed_in? %>
-    <div> Signed in as <%= current_user.email %></div>
-    <% end %>
 
     <%= yield %>
+    <div class="footer">
+    <a href= '/'> J-EATS developed by Joseph, Erce, Abigail, Tom and Stephan </a>
+  </div>
+
   </body>
 </html>
