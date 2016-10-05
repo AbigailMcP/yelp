@@ -1,8 +1,9 @@
+<div class="jumbotron">
 <div class="container">
   <div class="row">
     <div class="col-md-2"></div>
     <div class="col-md-8">
-        <div class="restaurant-container"><h1 class="restaurant-index">Nearby Restaurants</h1></div>
+        <div class="login-container"><h1 class="restaurant-index">Nearby Restaurants</h1>
         <% @restaurant_scores.each do |restaurant, score| %>
          <div class="restaurant-container">
            <%= restaurant.name %>
@@ -16,6 +17,8 @@
       <p>There are no restaurants :'(</p>
     <% end %>
   </div>
+  </div>
   <div class="col-md-2"></div>
   </div>
 </div>
+<div>
