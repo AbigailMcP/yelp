@@ -4,29 +4,52 @@ require "spec_helper"
 
   feature 'posting reviews' do
     before do
-      Capybara.current_driver = :selenium
-      visit '/restaurant/new'
-      fill_in('name', with: 'Chicken shop')
-      fill_in('description', with: 'ChickeneyChicken lol :)')
-      click_on('add')
+      signup
+      create_restaurant
     end
 
-    scenario 'they can review a specific restaurant', js: true  do
-      visit '/restaurant/'
-      click_button('View restaurant')
-      click_button('Add Review')
-      fill_in('review_score', with: 5)
-      fill_in('review_comment', with: "very chickeny")
-      click_on('Save Review')
-      expect(page).to have_content("5/5 - very chickeny")
-      visit '/restaurant/'
-      click_button('View restaurant')
-      click_button('Add Review')
-      fill_in('review_score', with: 1)
-      fill_in('review_comment', with: "bad chicken")
-      click_on('Save Review')
-      visit '/restaurant/'
-      click_button('View restaurant')
-      expect(page).to have_content("Average Rating - 3.0/5")
+    scenario 'they cannot review a specific restaurant' do
+      write_review
+      expect(page).to have_content("You cannot review your own restaurant")
     end
-  end
+
+    scenario 'reviewing a restaurant twice' do
+      signout
+      signup2
+      write_review
+      write_review
+      expect(page).to have_content("You have already reviewed this restaurant")
+    end
+    scenario 'reviewing others restaurant' do
+      signout
+      signup2
+      write_review
+      expect(page).to have_content("4/5 - very chickeny")
+      visit '/restaurant/'
+      click_link('Chicken shop')
+      expect(page).to have_content("Average Rating - 4.0/5")
+    end
+    scenario 'deleting own comment' do
+      signout
+      signup2
+      write_review
+      visit '/restaurant/'
+      click_link('Chicken shop')
+      click_button('View reviews')
+      click_button('Delete review')
+      expect(page).not_to have_content("4/5 - very chickeny")
+      expect(page).to have_content("Review successfully deleted")
+    end
+
+    scenario 'deleting others comment' do
+      signout
+      signup2
+      write_review
+      signout
+      login
+      visit '/restaurant/'
+      click_link('Chicken shop')
+      expect(page).not_to have_content("Delete review")
+    end
+
+end
