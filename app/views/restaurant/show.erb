@@ -11,7 +11,7 @@
   <% @reviews.each do |review| %>
     <%= review.score %>/5 - <%= review.comment %>
     <br>
-    <%= User.find(review.user_id).email %>
+    Reviewed by <%= review.user.email %> on <%= (review.created_at).strftime("%d/%m/%Y") %>
     <% if review.user_id == current_user.id %>
     <%= button_to "Delete review", "/restaurant/#{params[:restaurant_id]}/review/#{review.id}t", method: :delete %>
     <% end %>
