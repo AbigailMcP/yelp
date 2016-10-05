@@ -1,13 +1,10 @@
 require 'spec_helper.rb'
 require 'rails_helper.rb'
 
-feature 'viewing restaurants' do
-
-  scenario 'they see a list of restaurants' do
-    visit '/restaurant'
-    expect(page).to have_content('There are no restaurants')
-  end
-
+feature 'signup' do
+  before(:each) do
+    signup
+    create_restaurant
 end
 
 feature 'adding restaurants' do
@@ -34,31 +31,35 @@ end
 feature 'showing single restaurant' do
 
   scenario 'can click through to individual restaurant page' do
-    visit '/restaurant/new'
-    fill_in('name', with: 'Chicken shop')
-    click_on('add')
-    click_on('View restaurant')
-    expect(page).to have_content('Chicken shop')
+    visit "/restaurant"
+    click_link("Chicken shop")
+    expect(page).to have_content('Great')
   end
 
 end
 
 feature 'editing restaurant' do
 
-  scenario 'can edit individual restaurant' do
-    visit '/restaurant/1/edit'
-    expect(page).to have_content('Edit restaurant')
-  end
-
-end
-
-feature 'editing restaurant' do
-
-  scenario 'can edit individual restaurant' do
-    visit '/restaurant/1/edit'
-    fill_in('restaurant', with: 'Fish shop')
+  scenario('can save edits to database') do
+    visit "/restaurant"
+    click_link("Chicken shop")
+    click_on('edit')
+    fill_in("restaurant[name]", with: 'Sushi shop')
     click_on('save')
-    expect(page).to have_content('Chicken shop')
+    expect(page).to have_current_path("/restaurant")
+    expect(page).to have_content('Sushi shop')
   end
 
+end
+
+  feature 'deleting restaurant' do
+
+    scenario 'can delete an individual restaurant' do
+      visit "/restaurant"
+      click_link("Chicken shop")
+      click_on('delete')
+      expect(page).to have_current_path("/restaurant")
+      expect(page).not_to have_content('Chicken shop')
+    end
+  end
 end

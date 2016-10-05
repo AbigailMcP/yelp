@@ -1,5 +1,8 @@
-<p>Chicken shop</p>
 
-Average Rating - <%= @score %>/5
-
-<input type="button" onclick="location.href = window.location.href+ '/review/new';" value="Add Review" />
+  <%= @restaurant.name %>
+  <%= @restaurant.description %>
+  Average Rating - <%= @score %>/5
+  <%= button_to "edit", "/restaurant/#{@restaurant.id}/edit", method: :get %>
+  <%= button_to "delete", "/restaurant/#{@restaurant.id}", method: :delete %>
+  <%= button_to "add review", "/restaurant/#{@restaurant.id}/review/new", method: :get %>
+  <%= button_to "View reviews", "/restaurant/#{@restaurant.id}/review/", method: :get %>

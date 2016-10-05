@@ -11,6 +11,7 @@
   </head>
 
   <body>
+
     <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -23,6 +24,24 @@
     </ul>
   </div>
 </nav>
+
+    <form action='/users/sign_up' method='GET'>
+    <button type="submit">Sign up page</button>
+    </form>
+    <%= button_to('Sign Out', destroy_user_session_path, {method: :delete}) %>
+    <% if flash[:alert] %>
+      <div class="alert"><%= flash[:alert] %> </div>
+      <% end %>
+    <% flash.each do |key, value| %>
+      <div class="alert alert-<%= key %>">
+        <a href="#" data-dismiss="alert" class="close">x</a>
+        <%= value %>
+      </div>
+    <% end %>
+    <% if user_signed_in? %>
+    <div> Signed in as <%= current_user.email %></div>
+    <% end %>
+
     <%= yield %>
   </body>
 </html>

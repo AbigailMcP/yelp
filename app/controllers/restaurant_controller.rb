@@ -7,10 +7,12 @@ class RestaurantController < ApplicationController
    end
 
    def new
+     user_signed_in? ? (@restaurant = Restaurant.new) : (redirect_to action: "index")
    end
 
    def create
-     @restaurant = Restaurant.create(restaurant_params)
+     @user = User.find(current_user.id)
+     @restaurant = @user.restaurants.create(restaurant_params_new)
      redirect_to action: "index"
    end
 
@@ -20,19 +22,28 @@ class RestaurantController < ApplicationController
    end
 
    def edit
+     @restaurant = Restaurant.find(params[:id])
    end
 
    def update
-     redirect_to "/restaurant/1"
+     @restaurant = Restaurant.find(params[:id])
+     @restaurant.update(restaurant_params)
+     redirect_to '/restaurant'
    end
 
    def destroy
+     @restaurant = Restaurant.find(params[:id])
+     @restaurant.destroy
      redirect_to action: "index"
    end
 
    private
 
-   def restaurant_params
+   def restaurant_params_new
      params.permit(:name, :description)
+   end
+
+   def restaurant_params
+     params[:restaurant].permit(:name, :description)
    end
 end
