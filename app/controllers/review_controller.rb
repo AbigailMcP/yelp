@@ -20,6 +20,13 @@ class ReviewController < ApplicationController
     @reviews = @restaurant.reviews
   end
 
+  def destroy
+    @review = Review.find(params[:id])
+    @review.destroy
+    flash[:alert] = "Review successfully deleted"
+    redirect_to action: "index"
+  end
+
   private
 
   def review_parameters
