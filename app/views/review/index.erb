@@ -6,7 +6,7 @@
   <% @reviews.each do |review| %>
     <%= review.score %>/5 - <%= review.comment %>
     <% if review.user_id == current_user.id %>
-    <%= button_to "Delete review", "/restaurant/#{params[:restaurant_id]}/review/#{review.id}", method: :delete %>
+    <%= button_to "Delete review", "/restaurant/#{params[:restaurant_id]}/review/#{review.id}t", method: :delete %>
     <% end %>
   <% end %>
 <% end %>
