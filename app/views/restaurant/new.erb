@@ -9,13 +9,16 @@
 
 <p>Add a restaurant</p>
 
-<%= form_for :restaurant, url: '/restaurant', method: :post do |f| %>
+<%= form_for :restaurant, url: '/restaurant', method: :post, multipart: true do |f| %>
     <%= f.label :name %>
     <%= f.text_field :name, placeholder: "Name", class: "form-control" %><br>
     <%= f.label :description %>
     <%= f.text_area :description, placeholder: "Description", class: "form-control"  %>
+    <%= f.label :image %>
+    <%= f.file_field_tag :image %>
     <br />
     <%= f.submit("Add", class: "btn btn-default center-block") %>
+
 <% end %>
 
 </div>
