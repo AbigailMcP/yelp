@@ -2,7 +2,18 @@
   <%= @restaurant.name %>
   <%= @restaurant.description %>
   Average Rating - <%= @score %>/5
+  <% if @restaurant.user_id == current_user.id %>
   <%= button_to "edit", "/restaurant/#{@restaurant.id}/edit", method: :get %>
   <%= button_to "delete", "/restaurant/#{@restaurant.id}", method: :delete %>
+  <% end %>
   <%= button_to "add review", "/restaurant/#{@restaurant.id}/review/new", method: :get %>
-  <%= button_to "View reviews", "/restaurant/#{@restaurant.id}/review/", method: :get %>
+
+  <% @reviews.each do |review| %>
+    <%= review.score %>/5 - <%= review.comment %>
+    <br>
+    Reviewed by <%= link_to review.user.email,"/users/#{review.user.id}", method: :get %> on <%= (review.created_at).strftime("%d/%m/%Y") %>
+    <% if review.user_id == current_user.id %>
+    <%= button_to "Delete review", "/restaurant/#{params[:restaurant_id]}/review/#{review.id}t", method: :delete %>
+    <% end %>
+    <br>
+  <% end %>
