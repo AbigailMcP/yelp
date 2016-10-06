@@ -1,14 +1,24 @@
-<ol>
-<% @restaurant_scores.each do |restaurant, score| %>
-  <li>
-    <%= restaurant.name %>
-    <%= restaurant.description %>
-    <%= score %>/5
-    <%= link_to restaurant.name, "/restaurant/#{restaurant.id}" %>
-    <%= restaurant.description %> <br>
-  </li>
-  <% end %>
-</ol>
-<% if @restaurants.empty? %>
-  <%= "There are no restaurants :'(" %>
-<% end %>
+<div class="jumbotron">
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+        <div class="login-container"><h1 class="restaurant-index">Nearby Restaurants</h1>
+        <% @restaurant_scores.each do |restaurant, score| %>
+         <div class="restaurant-container">
+           <%= restaurant.name %>
+           <%= restaurant.description %>
+           <%= score %>/5
+           <%= link_to restaurant.name, "/restaurant/#{restaurant.id}" %>
+           <%= restaurant.description %>
+        </div>
+        <% end %>
+    <% if @restaurants.empty? %>
+      <p>There are no restaurants :'(</p>
+    <% end %>
+  </div>
+  </div>
+  <div class="col-md-2"></div>
+  </div>
+</div>
+<div>

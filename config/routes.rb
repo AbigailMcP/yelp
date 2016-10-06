@@ -5,9 +5,6 @@ Rails.application.routes.draw do
     resources :review, only: [:index, :new, :create, :destroy]
   end
 
-  devise_scope :users do
-    get '/' => 'restaurant#index'
-  end
   root 'application#home'
 
 end
