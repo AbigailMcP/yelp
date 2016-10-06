@@ -8,7 +8,7 @@ feature 'user can sign up' do
     fill_in('user_email', with: 'jo@jo.com')
     fill_in('user_password', with: '123456')
     fill_in('user_password_confirmation', with: '123456')
-    click_on('Sign up')
+    click_on('Sign up!')
     click_on('Sign Out')
     expect(page).to have_content('Signed out successfully')
   end
@@ -18,7 +18,7 @@ feature 'user can sign up' do
     fill_in('user_email', with: 'jo@jo.com')
     fill_in('user_password', with: '123456')
     fill_in('user_password_confirmation', with: '123456')
-    click_on('Sign up')
+    click_on('Sign up!')
     expect(page).to have_content('You have signed up successfully')
   end
 
