@@ -12,13 +12,16 @@ class RestaurantController < ApplicationController
 
    def create
      @user = User.find(current_user.id)
-     @restaurant = @user.restaurants.create(restaurant_params_new)
+     @restaurant = @user.restaurants.create(restaurant_params)
      redirect_to action: "index"
    end
 
    def show
      @restaurant = Restaurant.find(params[:id])
+     @check = @restaurant.user_id == current_user.id
      @score = @restaurant.get_average_score
+    @reviews = @restaurant.reviews
+
    end
 
    def edit
@@ -39,11 +42,7 @@ class RestaurantController < ApplicationController
 
    private
 
-   def restaurant_params_new
-     params.permit(:name, :description)
-   end
-
    def restaurant_params
-     params[:restaurant].permit(:name, :description)
+     params[:restaurant].permit(:name, :description,:image)
    end
 end

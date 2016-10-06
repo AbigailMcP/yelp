@@ -1,9 +1,29 @@
-<p>Add a restaurant</p>
+<div class="jumbotron">
+<div class="container">
+  <div class="row top-buffer"></div>
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
 
-<%= form_tag("/restaurant", method: "post") do %>
-  <%= label_tag(:name, "Restaurant name:") %>
-  <%= text_field_tag(:name) %>
-  <%= label_tag(:description, "Description:") %>
-  <%= text_field_tag(:description) %>
-  <%= submit_tag("add") %>
+<div class="login-container" >
+
+<h2>Add a Restaurant</h2>
+
+<%= form_for :restaurant, url: '/restaurant', method: :post, multipart: true do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name, placeholder: "Name", class: "form-control" %><br>
+    <%= f.label :description %>
+    <%= f.text_area :description, placeholder: "Description", class: "form-control"  %>
+    <%= f.label :image %>
+    <%= f.file_field :image, class: "form-control" %>
+    <br/>
+    <%= f.submit("Add", class: "btn btn-default center-block") %>
+
 <% end %>
+
+</div>
+</div>
+<div class="col-md-3"></div>
+</div>
+</div>
+<div>

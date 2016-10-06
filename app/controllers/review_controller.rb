@@ -8,10 +8,10 @@ class ReviewController < ApplicationController
       @user = User.find(current_user.id)
       @restaurant = Restaurant.find(params[:restaurant_id])
       review = Review.add_review(@user, @restaurant, review_parameters)
-      flash[:alert] = review.errors[:review]
-      redirect_to "/restaurant/#{params[:restaurant_id]}/review"
+      flash[:danger] = review.errors[:review]
+      redirect_to "/restaurant/#{params[:restaurant_id]}"
     else
-      redirect_to "index"
+      redirect_to "/"
     end
   end
 
@@ -23,8 +23,8 @@ class ReviewController < ApplicationController
   def destroy
     @review = Review.find(params[:id])
     @review.destroy
-    flash[:alert] = "Review successfully deleted"
-    redirect_to action: "index"
+    flash[:info] = "Review successfully deleted"
+    redirect_to "/restaurant/#{params[:restaurant_id]}"
   end
 
   private

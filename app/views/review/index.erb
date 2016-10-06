@@ -1,12 +1,46 @@
-<h1>restaurant reviews</h1>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<h1 class="restaurant-index">Restaurant Reviews</h1>
+</div><!-- /col-sm-12 -->
+</div><!-- /row -->
+<div class="row">
+<div class="col-sm-1">
+<div class="thumbnail">
+<img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+</div><!-- /thumbnail -->
+</div><!-- /col-sm-1 -->
 
-<% if @reviews.empty?%>
-  <%= 'There are no reviews' %>
-<% else %>
+<div class="col-sm-5">
+<div class="panel panel-default">
+  <% if @reviews.empty?%>
+    <%= 'There are no reviews' %>
+  <% else %>
   <% @reviews.each do |review| %>
-    <%= review.score %>/5 - <%= review.comment %>
-    <% if review.user_id == current_user.id %>
-    <%= button_to "Delete review", "/restaurant/#{params[:restaurant_id]}/review/#{review.id}t", method: :delete %>
-    <% end %>
+    <div class="panel-heading">
+    <h3>myusername</h3> <span class="text-muted"></span>
+    </div>
+    <div class="panel-body">
+      <h2><%= review.score %>/5 - <%= review.comment %>
+      <% if review.user_id == current_user.id %></h2>
+      <%= button_to "Delete review", "/restaurant/#{params[:id]}/review/#{review.id}", method: :delete, class: "btn btn-default center-block" %>
+      <% end %>
+    </div><!-- /panel-body -->
   <% end %>
-<% end %>
+  <% end %>
+</div><!-- /panel panel-default -->
+</div><!-- /col-sm-5 -->
+
+<div class="col-sm-1">
+<div class="thumbnail">
+<img class="img-responsive user-photo" src="https://ssl.gstatic.com/accounts/ui/avatar_2x.png">
+</div><!-- /thumbnail -->
+</div><!-- /col-sm-1 -->
+
+<div class="col-sm-5">
+<div class="panel panel-default">
+</div><!-- /panel panel-default -->
+</div><!-- /col-sm-5 -->
+</div><!-- /row -->
+
+</div><!-- /container -->

@@ -13,3 +13,199 @@
  *= require_tree .
  *= require_self
  */
+
+.review-row {
+  padding: 10px;
+  margin: 10px;
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 10px;
+}
+
+ul {padding-left: 0px;}
+
+ li {
+   list-style: none;
+   text-align: center;
+ }
+.fb-btn{
+background-image: url('http://i.stack.imgur.com/SoLOz.png');
+background-size: 100% 100%;
+}
+.restaurant-container {
+  background-color: rgba(255,255,255,0.7);
+  margin: 15px 0px 15px 0px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  border-radius: 10px;
+  height: 160px;
+}
+
+.restaurant-index {
+  text-align:center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.jumbotron {
+    margin-bottom: 0px;
+    min-height: 600px;
+    background-image: url('http://www.accidentaltravelwriter.net/.a/6a0148c6f68c01970c01a51142ee2a970c-pi');
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: #2B4570;
+    align-content: center;
+ }
+
+.transparent-grey {
+  background-color: rgba(234, 234, 234, 0.5);
+  border-radius: 25px;
+  width: 95%;
+  margin-left: 2.5%;
+  padding-bottom: 25px;
+
+}
+body{margin-top: 20px}
+.top-buffer { margin-top:50px; }
+
+.footer {
+  margin-top: 10px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-top: 3px solid #eaeaea;
+  text-align: center;
+  background-color: white;
+  position:fixed;
+  left:0px;
+  bottom:10px;
+  height:30px;
+  width:100%;
+}
+
+.login-container {
+  align-content: center;
+  align-items: center;
+  background-color: rgba(234, 234, 234, 0.8);;
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #d6d2d2;
+}
+
+.img_preview {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  height: 150px;
+  width: 170px;
+  background-color: white;
+}
+.index-image {
+  display: inline;
+  width: 150px;
+  height:150px;
+
+}
+.index-info {
+  border-radius: 10px;
+  display: inline-block;
+  width: 60%;
+  height: 100%;
+}
+
+.review-form {
+  background-color: rgba(255,255,255,0.7);
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.review-container {
+  position: relative;
+  background-color: #DDE9F0;
+  border: 2px solid grey;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  border-radius: 10px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.thumbnail {
+    padding:0px;
+}
+.panel {
+	position:relative;
+}
+.panel>.panel-heading:after,.panel>.panel-heading:before{
+	position:absolute;
+	top:11px;left:-16px;
+	right:100%;
+	width:0;
+	height:0;
+	display:block;
+	content:" ";
+	border-color:transparent;
+	border-style:solid solid outset;
+	pointer-events:none;
+}
+.panel>.panel-heading:after{
+	border-width:7px;
+	border-right-color:#f7f7f7;
+	margin-top:1px;
+	margin-left:2px;
+}
+.panel>.panel-heading:before{
+	border-right-color:#ddd;
+	border-width:8px;
+}
+
+.btn-grey{
+    background-color:#D8D8D8;
+	color:#FFF;
+}
+.rating-block{
+  margin-left: 25px;
+	background-color: rgba(255,255,255,0.7);
+	padding:15px 15px 20px 15px;
+	border-radius: 10px;
+}
+
+.breakdown-block{
+  display: inline;
+  width: 45.5%;
+	background-color: rgba(255,255,255,0.7);
+	border-radius: 10px;
+}
+
+
+
+.bold{
+	font-weight:700;
+}
+.padding-bottom-7{
+	padding-bottom:7px;
+}
+
+.review-block{
+	padding:15px;
+	border-radius:3px;
+	margin-bottom:15px;
+}
+.review-block-name{
+	font-size:12px;
+	margin:10px 0;
+}
+.review-block-date{
+	font-size:12px;
+}
+.review-block-rate{
+	font-size:13px;
+	margin-bottom:15px;
+}
+.review-block-title{
+	font-size:15px;
+	font-weight:700;
+	margin-bottom:10px;
+}
+.review-block-description{
+	font-size:13px;
+}
