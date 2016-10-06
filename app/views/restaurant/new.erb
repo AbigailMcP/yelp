@@ -7,7 +7,7 @@
 
 <div class="login-container" >
 
-<p>Add a restaurant</p>
+<h2>Add a Restaurant</h2>
 
 <%= form_for :restaurant, url: '/restaurant', method: :post, multipart: true do |f| %>
     <%= f.label :name %>
@@ -15,8 +15,8 @@
     <%= f.label :description %>
     <%= f.text_area :description, placeholder: "Description", class: "form-control"  %>
     <%= f.label :image %>
-    <%= f.file_field_tag :image %>
-    <br />
+    <%= f.file_field :image, class: "form-control" %>
+    <br/>
     <%= f.submit("Add", class: "btn btn-default center-block") %>
 
 <% end %>

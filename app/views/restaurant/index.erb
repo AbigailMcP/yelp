@@ -2,17 +2,18 @@
 <div class="jumbotron">
 <div class="container">
   <div class="row">
-    <div class="col-md-2"></div>
-    <div class="col-md-8">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
         <div class="login-container"><h1 class="restaurant-index">Nearby Restaurants</h1>
         <% @restaurant_scores.each do |restaurant, score| %>
          <div class="restaurant-container">
-           <%= image_tag restaurant.image.url(:thumb) %>
-           <%= restaurant.name %>
-           <%= restaurant.description %>
-           <%= score %>/5
-           <%= link_to restaurant.name, "/restaurant/#{restaurant.id}" %>
-           <%= restaurant.description %>
+           <div class="index-image"><%= image_tag(restaurant.image.url(:thumb), :class => "img_preview") %></div>
+           <div class="index-info">
+           <h3><%= restaurant.name %></h3>
+           <h4><%= restaurant.description %></h4>
+           <h4>Average Score: <%= score == "Unreviewed" ? score : score.to_s + "/5" %></h4>
+           <%= button_to "Read More", "/restaurant/#{restaurant.id}", class: "btn btn-default", method: :get %>
+           </div>
         </div>
         <% end %>
     <% if @restaurants.empty? %>
@@ -20,6 +21,6 @@
     <% end %>
   </div>
   </div>
-  <div class="col-md-2"></div>
+  <div class="col-md-1"></div>
   </div>
 </div>

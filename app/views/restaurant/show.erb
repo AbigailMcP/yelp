@@ -2,28 +2,38 @@
 <div class="container">
   <div class="row top-buffer"></div>
   <div class="row">
-    <div class="col-md-3"></div>
-    <div class="col-md-6">
+    <div class="col-md-1"></div>
+    <div class="col-md-10">
 
 
 <div class="login-container" >
-  <h1><%= @restaurant.name %></h1>
-    <%=  image_tag @restaurant.image.url %>
-  <h2> Average Rating - <%= @score %>/5 <h2>
-  <h3><%= @restaurant.description %></h3>
-  <br>
-  <% if @check %>
-  <div class="btn-group-justified">
-  <div class="btn-group"><%= button_to "Edit", "/restaurant/#{@restaurant.id}/edit", method: :get, class: "btn btn-default" %></div>
-  <div class="btn-group"><%= button_to "Delete", "/restaurant/#{@restaurant.id}", method: :delete, class: "btn btn-default" %></div>
+  <div class="row">
+    <div class="col-md-6">
+      <h1><%= @restaurant.name %></h1>
+        <%=  image_tag @restaurant.image.url %>
+      <h2><%= @restaurant.description %></h2>
+      <br>
+      <% if @check %>
+      <div class="btn-group-justified">
+      <div class="btn-group"><%= button_to "Edit", "/restaurant/#{@restaurant.id}/edit", method: :get, class: "btn btn-default" %></div>
+      <div class="btn-group"><%= button_to "Delete", "/restaurant/#{@restaurant.id}", method: :delete, class: "btn btn-default" %></div>
+      </div>
+      <% end %>
+      <br>
+    </div>
+    <div class="col-md-6">
+      <div style="height:40px;"></div>
+      <%= render 'review/new'%>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+          <%= render 'review/index'%>
+    </div>
+
+  </div>
 </div>
-<% end %>
-<br>
-<%= render 'review/new'%>
-<%= render 'review/index'%>
 </div>
-</div>
-<div class="col-md-3"></div>
+<div class="col-md-1"></div>
 </div>
 </div>
 <div>
