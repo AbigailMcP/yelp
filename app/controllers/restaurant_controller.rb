@@ -19,6 +19,10 @@ class RestaurantController < ApplicationController
    def show
      @restaurant = Restaurant.find(params[:id])
      @score = @restaurant.get_average_score
+     @reviews = @restaurant.reviews
+    #  @reviews.each do |review|
+    #  related_mails << User.find(review.user_id).email
+    #  end
    end
 
    def edit
@@ -40,10 +44,10 @@ class RestaurantController < ApplicationController
    private
 
    def restaurant_params_new
-     params.permit(:name, :description)
+     params.permit(:name, :description, :address)
    end
 
    def restaurant_params
-     params[:restaurant].permit(:name, :description)
+     params[:restaurant].permit(:name, :description, :address)
    end
 end
