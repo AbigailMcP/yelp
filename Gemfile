@@ -55,3 +55,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'pg', '0.19.0'
 gem 'devise'
+
+gem 'aws-sdk', '2.6.5'
+gem 'geocoder', '1.4.0'
