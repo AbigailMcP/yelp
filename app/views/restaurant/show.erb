@@ -10,17 +10,15 @@
   <h2> Average Rating - <%= @score %>/5 <h2>
   <h3><%= @restaurant.description %></h3>
   <br>
-  <% if !@check %>
+  <% if @check %>
   <div class="btn-group-justified">
   <div class="btn-group"><%= button_to "Edit", "/restaurant/#{@restaurant.id}/edit", method: :get, class: "btn btn-default" %></div>
   <div class="btn-group"><%= button_to "Delete", "/restaurant/#{@restaurant.id}", method: :delete, class: "btn btn-default" %></div>
 </div>
 <% end %>
 <br>
- <div class="btn-group-justified">
-  <div class="btn-group"><%= button_to "Add Review", "/restaurant/#{@restaurant.id}/review/new", method: :get, class: "btn btn-default" %></div>
-  <div class="btn-group"><%= button_to "View Reviews", "/restaurant/#{@restaurant.id}/review/", method: :get, class: "btn btn-default" %></div>
-</div>
+<%= render 'review/new'%>
+<%= render 'review/index'%>
 </div>
 </div>
 <div class="col-md-3"></div>

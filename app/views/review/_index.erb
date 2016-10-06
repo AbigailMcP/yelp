@@ -1,0 +1,16 @@
+
+
+<h1 class="restaurant-index">Restaurant Reviews</h1>
+<% if @reviews.empty?%>
+  <%= 'There are no reviews' %>
+<% else %>
+  <% @reviews.each do |review| %>
+  <div class="restaurant-container">
+    <h3><%= review.score %>/5 - <%= review.comment %>
+    <% if review.user_id == current_user.id %></h3>
+    <%= button_to "Delete review", "/restaurant/#{params[:id]}/review/#{review.id}", method: :delete, class: "btn btn-default center-block" %>
+    <% end %>
+
+  </div>
+  <% end %>
+<% end %>

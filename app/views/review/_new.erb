@@ -1,0 +1,9 @@
+
+
+<p>Add review</p>
+
+<%= form_for :review,  url: "/restaurant/#{params[:id]}/review" do |f| %>
+  Score: <%= f.number_field :score, placeholder: "Score", class: "form-control" %><br />
+  Comment: <%= f.text_area :comment, placeholder: "Comment", class: "form-control" %><br />
+  <%= f.submit("Save", class: "btn btn-default center-block") %>
+<% end %>

@@ -20,6 +20,8 @@ class RestaurantController < ApplicationController
      @restaurant = Restaurant.find(params[:id])
      @check = @restaurant.user_id == current_user.id
      @score = @restaurant.get_average_score
+    @reviews = @restaurant.reviews
+
    end
 
    def edit
