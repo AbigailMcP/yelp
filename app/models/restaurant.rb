@@ -2,6 +2,8 @@ class Restaurant < ApplicationRecord
   has_many :reviews
   belongs_to :user
   validates :name, presence: true
+  geocoded_by :address
+  after_validation :geocode
 
   def get_average_score
     reviews = self.reviews.to_ary
