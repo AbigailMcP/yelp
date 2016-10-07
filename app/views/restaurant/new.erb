@@ -16,9 +16,11 @@
     <%= f.text_area :description, placeholder: "Description", class: "form-control"  %>
     <%= f.label :address %>
     <%= f.text_area :address, placeholder: "Address", class: "form-control"  %>
+
     <%= f.label :image %>
     <%= f.file_field :image, class: "form-control" %>
     <br/>
+
     <%= f.submit("Add", class: "btn btn-default center-block") %>
 
 <% end %>

@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20161006112816) do
     t.string   "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
+
     t.index ["user_id"], name: "index_restaurants_on_user_id", using: :btree
   end
 
