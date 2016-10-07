@@ -28,6 +28,8 @@
   <div class="row">
     <div class="col-md-12">
           <%= render 'review/index'%>
+    <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJNb-VAbUcdkgRvRTBd6ymuCE&key=AIzaSyCvpkVLZjk4fB-71L_Qi6y3yKgzzTCuTKA" allowfullscreen></iframe>
+    <iframe width="800" height="450" frameborder="0" style="border:0" src='<%= "https://www.google.com/maps/embed/v1/view?key=AIzaSyCvpkVLZjk4fB-71L_Qi6y3yKgzzTCuTKA&center=#{@restaurant.latitude},#{@restaurant.longitude}&zoom=17" %>' allowfullscreen></iframe>
     </div>
 
   </div>
