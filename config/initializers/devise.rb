@@ -1,6 +1,12 @@
 # Use this hook to configure devise mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
-FACEBOOK_CONFIG = YAML.load_file("#{::Rails.root}/facebook_secrets.yml")[::Rails.env]
+
+
+if Rails.env.production?
+  FACEBOOK_CONFIG = ENV
+else
+  FACEBOOK_CONFIG = YAML.load_file("#{::Rails.root}/facebook_secrets.yml")[::Rails.env]
+end
 
 Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
