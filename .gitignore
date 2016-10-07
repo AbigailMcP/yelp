@@ -1,3 +1,4 @@
 tmp
 log
 facebook_secrets.yml
+.env
