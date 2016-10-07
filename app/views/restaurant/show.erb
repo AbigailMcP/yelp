@@ -1,11 +1,22 @@
+<style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        align-content: center;
+        margin-left: 75px;
+        height: 200px;
+        width: 800px;
+      }
+    </style>
 <div class="jumbotron">
 <div class="container">
   <div class="row top-buffer"></div>
   <div class="row">
     <div class="col-md-1"></div>
     <div class="col-md-10">
-
-
 <div class="login-container" >
   <div class="row">
     <div class="col-md-6">
@@ -26,12 +37,35 @@
       <%= render 'review/new'%>
   </div>
   <div class="row">
-    <div class="col-md-12">
+    <div class="col-md-12" >
           <%= render 'review/index'%>
-    <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJNb-VAbUcdkgRvRTBd6ymuCE&key=AIzaSyCvpkVLZjk4fB-71L_Qi6y3yKgzzTCuTKA" allowfullscreen></iframe>
-    <iframe width="800" height="450" frameborder="0" style="border:0" src='<%= "https://www.google.com/maps/embed/v1/view?key=AIzaSyCvpkVLZjk4fB-71L_Qi6y3yKgzzTCuTKA&center=#{@restaurant.latitude},#{@restaurant.longitude}&zoom=17" %>' allowfullscreen></iframe>
-    </div>
+          <div id="map"></div>
+              <script>
+              var marker;
 
+              console.log(<%= @restaurant.latitude %>);
+              console.log(<%= @restaurant.longitude %>);
+                function initMap() {
+                  var myLatLng = {lat: <%= @restaurant.latitude %>, lng: <%= @restaurant.longitude %>};
+
+                  var map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 15,
+                    center: myLatLng
+                  });
+
+                  var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    title: 'Hello World!'
+                  });
+                }
+              </script>
+              <script async defer
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvpkVLZjk4fB-71L_Qi6y3yKgzzTCuTKA&callback=initMap">
+              </script>
+
+    <!-- <div id="map"><iframe width="800" height="450" frameborder="0" style="border:0" src='<%= "https://www.google.com/maps/embed/v1/view?key=#{ENV['MAPS_API']}&callback=initMap' allowfullscreen></iframe></div> -->
+    </div>
   </div>
 </div>
 </div>
