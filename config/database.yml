@@ -4,6 +4,12 @@ default: &default
   encoding: unicode
 
 development:
+  adapter: postgresql
+  host: localhost
+  username: user
+  database: app-dev
+
+development:
    adapter: postgresql
    encoding: unicode
    database: yelp_development
