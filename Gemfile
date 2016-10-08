@@ -3,8 +3,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
 # Use Puma as the app server
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -41,6 +40,11 @@ group :development, :test do
   gem 'database_cleaner'
 end
 
+group :test do
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
+end
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
@@ -55,3 +59,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'pg', '0.19.0'
 gem 'devise'
+gem 'aws-sdk', '2.6.5'
+gem 'geocoder', '1.4.0'
