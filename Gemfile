@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-
+gem 'dotenv-rails', :groups => [:development, :test]
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
@@ -29,7 +29,7 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-gem 'paperclip'
+gem "paperclip", "~> 5.0.0"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -59,6 +59,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'pg', '0.19.0'
 gem 'devise'
-
 gem 'aws-sdk', '2.6.5'
 gem 'geocoder', '1.4.0'

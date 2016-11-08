@@ -21,7 +21,8 @@ class RestaurantController < ApplicationController
      @check = @restaurant.user_id == current_user.id
      @score = @restaurant.get_average_score
     @reviews = @restaurant.reviews
-
+    @latitude = @restaurant.latitude
+    @longitude = @restaurant.longitude
    end
 
    def edit
@@ -44,5 +45,6 @@ class RestaurantController < ApplicationController
 
    def restaurant_params
      params[:restaurant].permit(:name, :description, :address, :image)
+
    end
 end
