@@ -1,29 +1,21 @@
 # README
 
-## TEAM J-EATS Joseph-Erce-Abigail-Tom-Stephan
+## Introduction
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is the repo for the Makers Academy Week Eight Project. We were tasked with building a Yelp clone. [You can read more here](https://tomstuart92.github.io/portfolio/Yelp/).
 
-Things you may want to cover:
+## Install Instructions
 
-* Ruby version
+- Fork and Clone repository to local machine.   
+- Install [Bundler](http://bundler.io/).  
+- Run `Bundle Install`.  
+- Run `Rackup`.   
+- Application is available on Localhost:9292 by default.   
 
-* System dependencies
+## Analysis
 
-* Configuration
+In this weekly project we were tasked with creating a Yelp clone in Ruby on Rails. Our project J-EATS, has all the core functionality of a restaurant review website.
 
-* Database creation
+For one weeks work in another new framework, I was pleased with the progress we made. The convention over configuration nature of Rails, made the project interesting, but for an application of this size, the bulk of Rails simply got in the way of an agile quick development cycle.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-* To migrate the DB, go to "db/migrate" and run below code with specific version (version = timestamp):
-  bin/rails db:migrate VERSION=<version>
+This is a project I hope to return to in the future, as I feel that the advantages of Rails will only really become apparent after full emersion in the framework for a decent period of time, and on a project of sufficient size.
